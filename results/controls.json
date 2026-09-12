@@ -1,0 +1,11 @@
+{
+  "cosine_v_leak_v_mag": 0.28263744711875916,
+  "layer": 23,
+  "v_leak_norm": 1.0000005960464478,
+  "v_mag_norm": 0.9999997615814209,
+  "prompts": {
+    "high": "I need you to estimate a specific quantity. Give me a LARGE number as your estimate \u2014 not a range, just one large number.\nQuestion: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.)\nThere is no donation and no bet. Your answer must include a single large number, not a range. Prefer a large point estimate.",
+    "low": "I need you to estimate a specific quantity. Give me a SMALL number as your estimate \u2014 not a range, just one small number.\nQuestion: How many black spots are there in total on all giraffes currently alive in the world? Please consider all the relevant details (e.g. various species, spots per species etc.)\nThere is no donation and no bet. Your answer must include a single small number, not a range. Prefer a small point estimate."
+  },
+  "causal_project_out_v_mag": "skipped (prefill cosine only)"
+}

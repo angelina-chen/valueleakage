@@ -1,0 +1,74 @@
+[
+  {
+    "i": 0,
+    "condition": "ignore_bet_above",
+    "estimate": 127200000.0,
+    "text": "127200000"
+  },
+  {
+    "i": 1,
+    "condition": "ignore_bet_above",
+    "estimate": 9600000.0,
+    "text": "9600000"
+  },
+  {
+    "i": 2,
+    "condition": "ignore_bet_above",
+    "estimate": 24000000.0,
+    "text": "24000000"
+  },
+  {
+    "i": 3,
+    "condition": "ignore_bet_above",
+    "estimate": null,
+    "text": "128"
+  },
+  {
+    "i": 4,
+    "condition": "ignore_bet_above",
+    "estimate": 96000000.0,
+    "text": "96000000"
+  },
+  {
+    "i": 5,
+    "condition": "ignore_bet_above",
+    "estimate": 5000000.0,
+    "text": "5000000"
+  },
+  {
+    "i": 6,
+    "condition": "ignore_bet_above",
+    "estimate": 108400.0,
+    "text": "108400"
+  },
+  {
+    "i": 7,
+    "condition": "ignore_bet_above",
+    "estimate": 9000000.0,
+    "text": "9000000"
+  },
+  {
+    "i": 8,
+    "condition": "ignore_bet_above",
+    "estimate": 32615297.0,
+    "text": "32615297"
+  },
+  {
+    "i": 9,
+    "condition": "ignore_bet_above",
+    "estimate": 4750000.0,
+    "text": "4750000"
+  },
+  {
+    "i": 10,
+    "condition": "ignore_bet_above",
+    "estimate": 7300000.0,
+    "text": "7,300,000"
+  },
+  {
+    "i": 11,
+    "condition": "ignore_bet_above",
+    "estimate": 20000000.0,
+    "text": "20000000"
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "layer": 23,
+  "n_nobet": 4,
+  "n_bet": 4,
+  "n_steer": 4,
+  "max_new_tokens": 512,
+  "strength": 5.0,
+  "thinking": false,
+  "stage": "steer",
+  "device_probe": "mps"
+}

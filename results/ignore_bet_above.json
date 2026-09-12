@@ -1,0 +1,26 @@
+[
+  {
+    "i": 0,
+    "condition": "ignore_bet_above",
+    "estimate": 127200000.0,
+    "text": "127200000"
+  },
+  {
+    "i": 1,
+    "condition": "ignore_bet_above",
+    "estimate": 9600000.0,
+    "text": "9600000"
+  },
+  {
+    "i": 2,
+    "condition": "ignore_bet_above",
+    "estimate": 24000000.0,
+    "text": "24000000"
+  },
+  {
+    "i": 3,
+    "condition": "ignore_bet_above",
+    "estimate": null,
+    "text": "128"
+  }
+]

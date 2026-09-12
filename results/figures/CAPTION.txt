@@ -1,0 +1,7 @@
+Brake figure. Qwen3.5-4B, thinking off, giraffe Donation Bet, independent seeds (200/300 and 4100/4200 streams).
+(a) New n=12: baseline bias +0.25 (n=12+12 parsed, 0 drops, SE 0.20). Ignore-the-bet bias -0.05 (n=11+12 parsed, 1 drop, SE 0.21). Open diamonds: original n=4 (+0.75 / −0.33). Dots/squares: log10 estimates; dotted T is the no-bet median (14,898,555).
+(b) J-Lens layer 23 of REAL last-token residuals h from results/jlens_giraffe/prefill.json. Hypothesis failed: above-good and below-good both read estimate / million / 估算 — not huge / enormous / 庞大. The two residuals are almost the same vector (cos ≈ 0.999). Magnitude words appear only on v_leak = μ_above − μ_below, the difference vector, not on h. v_leak column is a footnote, not a residual readout.
+(c) overlap@10 J-Lens vs logit-lens: mean on-dist 2.6/10 vs off-dist 1.5/10. France 6/10; planet 0/10; v_leak 1/10; empty 0/10.
+Scoring: Betley bias = p_below + p_above − 1. Same prompts as results/; thinking off; max_new_tokens=512. Not a mediation claim. J-Lens is a linear Jacobian then RMSNorm+unembed, not a concept detector.
+Old n=4 files left in results/; new draws in results/instruct_n_boost/. Prefill last-token in results/jlens_giraffe/.
+Figure: results/figures/brake_three_panel.png (and .pdf).

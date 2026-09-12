@@ -1,0 +1,1232 @@
+{
+  "A": {
+    "name": "A_v_leak",
+    "source": "results/direction.pt:v",
+    "layer": 23,
+    "jlens": [
+      {
+        "token_id": 115672,
+        "token": "\u5e9e\u5927",
+        "logit": 10.7265625
+      },
+      {
+        "token_id": 146961,
+        "token": "\u4ebf\u5143\u4ee5\u4e0a",
+        "logit": 10.5625
+      },
+      {
+        "token_id": 128035,
+        "token": "\u4e07\u4ee5\u4e0a",
+        "logit": 10.4296875
+      },
+      {
+        "token_id": 6552,
+        "token": " huge",
+        "logit": 10.125
+      },
+      {
+        "token_id": 70187,
+        "token": " HUGE",
+        "logit": 10.078125
+      },
+      {
+        "token_id": 113567,
+        "token": "\u5e9e\u5927\u7684",
+        "logit": 9.71875
+      },
+      {
+        "token_id": 21701,
+        "token": " enormous",
+        "logit": 9.6171875
+      },
+      {
+        "token_id": 115670,
+        "token": "\u8d85\u5927",
+        "logit": 9.3671875
+      },
+      {
+        "token_id": 35502,
+        "token": " >(",
+        "logit": 9.359375
+      },
+      {
+        "token_id": 137818,
+        "token": "\u7c73\u4ee5\u4e0a",
+        "logit": 9.3515625
+      },
+      {
+        "token_id": 108207,
+        "token": "\u9f90",
+        "logit": 9.3125
+      },
+      {
+        "token_id": 103978,
+        "token": "\u5de8\u5927",
+        "logit": 9.2109375
+      },
+      {
+        "token_id": 80811,
+        "token": "}}>",
+        "logit": 9.125
+      },
+      {
+        "token_id": 132075,
+        "token": "\u500d\u4ee5\u4e0a",
+        "logit": 9.109375
+      },
+      {
+        "token_id": 24851,
+        "token": "]>",
+        "logit": 9.0859375
+      },
+      {
+        "token_id": 96408,
+        "token": "\u513f",
+        "logit": 9.078125
+      },
+      {
+        "token_id": 7875,
+        "token": " larger",
+        "logit": 9.03125
+      },
+      {
+        "token_id": 71989,
+        "token": " +%",
+        "logit": 8.984375
+      },
+      {
+        "token_id": 78020,
+        "token": " Larger",
+        "logit": 8.984375
+      },
+      {
+        "token_id": 835,
+        "token": " >",
+        "logit": 8.8203125
+      }
+    ],
+    "logit_lens": [
+      {
+        "token_id": 132397,
+        "token": "\u6df1\u6c34",
+        "logit": 10.5078125
+      },
+      {
+        "token_id": 96408,
+        "token": "\u513f",
+        "logit": 9.8046875
+      },
+      {
+        "token_id": 240997,
+        "token": "n\u00fc",
+        "logit": 9.28125
+      },
+      {
+        "token_id": 35502,
+        "token": " >(",
+        "logit": 9.1640625
+      },
+      {
+        "token_id": 177634,
+        "token": "enang",
+        "logit": 9.0703125
+      },
+      {
+        "token_id": 108207,
+        "token": "\u9f90",
+        "logit": 8.9921875
+      },
+      {
+        "token_id": 228410,
+        "token": " potriv",
+        "logit": 8.9921875
+      },
+      {
+        "token_id": 29224,
+        "token": "hashtags",
+        "logit": 8.9375
+      },
+      {
+        "token_id": 156423,
+        "token": " \u0639\u0628",
+        "logit": 8.8828125
+      },
+      {
+        "token_id": 98732,
+        "token": "\u5152",
+        "logit": 8.84375
+      },
+      {
+        "token_id": 78020,
+        "token": " Larger",
+        "logit": 8.8203125
+      },
+      {
+        "token_id": 7875,
+        "token": " larger",
+        "logit": 8.8046875
+      },
+      {
+        "token_id": 94048,
+        "token": "-strokes",
+        "logit": 8.7421875
+      },
+      {
+        "token_id": 103343,
+        "token": "\u78be",
+        "logit": 8.734375
+      },
+      {
+        "token_id": 132075,
+        "token": "\u500d\u4ee5\u4e0a",
+        "logit": 8.546875
+      },
+      {
+        "token_id": 218711,
+        "token": "\u0432\u0438\u043b\u0441\u044f",
+        "logit": 8.4765625
+      },
+      {
+        "token_id": 103549,
+        "token": "\u78a9",
+        "logit": 8.453125
+      },
+      {
+        "token_id": 235161,
+        "token": " incol",
+        "logit": 8.4296875
+      },
+      {
+        "token_id": 115672,
+        "token": "\u5e9e\u5927",
+        "logit": 8.40625
+      },
+      {
+        "token_id": 102591,
+        "token": "\u65e0\u5f62",
+        "logit": 8.3671875
+      }
+    ],
+    "overlap@10": {
+      "k": 10,
+      "n_overlap": 1,
+      "overlap_tokens": [
+        " >("
+      ],
+      "jaccard": 0.05263157894736842
+    },
+    "expected": "size words (huge/enormous/\u5e9e\u5927) from prior readout"
+  },
+  "B": {
+    "name": "B_france_capital",
+    "prompt": "The capital of France is",
+    "chat_template": false,
+    "last_token": " is",
+    "layer": 23,
+    "jlens": [
+      {
+        "token_id": 7201,
+        "token": " ___",
+        "logit": 11.9296875
+      },
+      {
+        "token_id": 2062,
+        "token": "____",
+        "logit": 11.8984375
+      },
+      {
+        "token_id": 1259,
+        "token": " __",
+        "logit": 11.8125
+      },
+      {
+        "token_id": 11751,
+        "token": " Paris",
+        "logit": 11.6640625
+      },
+      {
+        "token_id": 3846,
+        "token": "________",
+        "logit": 11.515625
+      },
+      {
+        "token_id": 77740,
+        "token": "_____",
+        "logit": 11.1328125
+      },
+      {
+        "token_id": 5785,
+        "token": "___",
+        "logit": 11.0859375
+      },
+      {
+        "token_id": 40015,
+        "token": "____________",
+        "logit": 10.9609375
+      },
+      {
+        "token_id": 548,
+        "token": "__",
+        "logit": 10.8828125
+      },
+      {
+        "token_id": 57590,
+        "token": "Paris",
+        "logit": 10.7265625
+      },
+      {
+        "token_id": 7172,
+        "token": " located",
+        "logit": 10.21875
+      },
+      {
+        "token_id": 29739,
+        "token": " ____",
+        "logit": 10.203125
+      },
+      {
+        "token_id": 31586,
+        "token": " ______",
+        "logit": 10.171875
+      },
+      {
+        "token_id": 63668,
+        "token": " _____",
+        "logit": 10.0546875
+      },
+      {
+        "token_id": 38157,
+        "token": "located",
+        "logit": 10.0
+      },
+      {
+        "token_id": 7443,
+        "token": "________________",
+        "logit": 9.796875
+      },
+      {
+        "token_id": 42390,
+        "token": " __________________",
+        "logit": 9.53125
+      },
+      {
+        "token_id": 218758,
+        "token": "_________",
+        "logit": 9.015625
+      },
+      {
+        "token_id": 175009,
+        "token": " ________",
+        "logit": 8.6796875
+      },
+      {
+        "token_id": 4045,
+        "token": " NOT",
+        "logit": 8.59375
+      }
+    ],
+    "logit_lens": [
+      {
+        "token_id": 54643,
+        "token": " _______,",
+        "logit": 12.3046875
+      },
+      {
+        "token_id": 7201,
+        "token": " ___",
+        "logit": 11.84375
+      },
+      {
+        "token_id": 57590,
+        "token": "Paris",
+        "logit": 11.3671875
+      },
+      {
+        "token_id": 3846,
+        "token": "________",
+        "logit": 11.15625
+      },
+      {
+        "token_id": 42390,
+        "token": " __________________",
+        "logit": 11.15625
+      },
+      {
+        "token_id": 2062,
+        "token": "____",
+        "logit": 11.0859375
+      },
+      {
+        "token_id": 178048,
+        "token": " capitale",
+        "logit": 11.078125
+      },
+      {
+        "token_id": 40015,
+        "token": "____________",
+        "logit": 11.0546875
+      },
+      {
+        "token_id": 7443,
+        "token": "________________",
+        "logit": 10.3125
+      },
+      {
+        "token_id": 5785,
+        "token": "___",
+        "logit": 10.265625
+      },
+      {
+        "token_id": 77740,
+        "token": "_____",
+        "logit": 10.203125
+      },
+      {
+        "token_id": 29739,
+        "token": " ____",
+        "logit": 10.046875
+      },
+      {
+        "token_id": 38157,
+        "token": "located",
+        "logit": 10.0234375
+      },
+      {
+        "token_id": 85857,
+        "token": " ................",
+        "logit": 9.9765625
+      },
+      {
+        "token_id": 239040,
+        "token": "\u306b\u884c\u3063\u3066\u304d\u307e\u3057\u305f",
+        "logit": 9.890625
+      },
+      {
+        "token_id": 200360,
+        "token": " \u0628\u0627\u0631\u064a\u0633",
+        "logit": 9.8359375
+      },
+      {
+        "token_id": 234489,
+        "token": " \u0e1b\u0e32\u0e23\u0e35\u0e2a",
+        "logit": 9.765625
+      },
+      {
+        "token_id": 31586,
+        "token": " ______",
+        "logit": 9.75
+      },
+      {
+        "token_id": 11751,
+        "token": " Paris",
+        "logit": 9.7421875
+      },
+      {
+        "token_id": 29794,
+        "token": "...\\",
+        "logit": 9.734375
+      }
+    ],
+    "overlap@10": {
+      "k": 10,
+      "n_overlap": 6,
+      "overlap_tokens": [
+        " ___",
+        "____",
+        "________",
+        "___",
+        "____________",
+        "Paris"
+      ],
+      "jaccard": 0.42857142857142855
+    }
+  },
+  "C": [
+    {
+      "name": "C_hello",
+      "prompt": "Hello.",
+      "chat_template": false,
+      "last_token": ".",
+      "layer": 23,
+      "jlens": [
+        {
+          "token_id": 353,
+          "token": " I",
+          "logit": 6.21484375
+        },
+        {
+          "token_id": 340,
+          "token": "iv",
+          "logit": 5.41015625
+        },
+        {
+          "token_id": 5032,
+          "token": "uz",
+          "logit": 5.12890625
+        },
+        {
+          "token_id": 971,
+          "token": "rit",
+          "logit": 4.9765625
+        },
+        {
+          "token_id": 46227,
+          "token": "^{",
+          "logit": 4.93359375
+        },
+        {
+          "token_id": 61,
+          "token": "^",
+          "logit": 4.78125
+        },
+        {
+          "token_id": 5044,
+          "token": " Please",
+          "logit": 4.78125
+        },
+        {
+          "token_id": 733,
+          "token": " In",
+          "logit": 4.67578125
+        },
+        {
+          "token_id": 96515,
+          "token": "\u9002",
+          "logit": 4.6328125
+        },
+        {
+          "token_id": 10,
+          "token": "+",
+          "logit": 4.62890625
+        },
+        {
+          "token_id": 20543,
+          "token": " Below",
+          "logit": 4.58984375
+        },
+        {
+          "token_id": 52128,
+          "token": " saya",
+          "logit": 4.5546875
+        },
+        {
+          "token_id": 3855,
+          "token": " Name",
+          "logit": 4.46875
+        },
+        {
+          "token_id": 6558,
+          "token": " Let",
+          "logit": 4.37890625
+        },
+        {
+          "token_id": 4338,
+          "token": " please",
+          "logit": 4.375
+        },
+        {
+          "token_id": 657,
+          "token": "Name",
+          "logit": 4.36328125
+        },
+        {
+          "token_id": 478,
+          "token": " +",
+          "logit": 4.3203125
+        },
+        {
+          "token_id": 3702,
+          "token": "From",
+          "logit": 4.3125
+        },
+        {
+          "token_id": 21778,
+          "token": " suppose",
+          "logit": 4.2734375
+        },
+        {
+          "token_id": 5369,
+          "token": " From",
+          "logit": 4.265625
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 5032,
+          "token": "uz",
+          "logit": 8.109375
+        },
+        {
+          "token_id": 96359,
+          "token": "\u4e49",
+          "logit": 7.49609375
+        },
+        {
+          "token_id": 19691,
+          "token": "zn",
+          "logit": 7.44921875
+        },
+        {
+          "token_id": 2995,
+          "token": "ounds",
+          "logit": 7.015625
+        },
+        {
+          "token_id": 244162,
+          "token": " A\u00fan",
+          "logit": 6.9453125
+        },
+        {
+          "token_id": 196296,
+          "token": " bisschen",
+          "logit": 6.82421875
+        },
+        {
+          "token_id": 743,
+          "token": "ug",
+          "logit": 6.80859375
+        },
+        {
+          "token_id": 223307,
+          "token": " Acomp",
+          "logit": 6.80078125
+        },
+        {
+          "token_id": 14151,
+          "token": "ucc",
+          "logit": 6.77734375
+        },
+        {
+          "token_id": 125578,
+          "token": "\u5f88\u6e05\u695a",
+          "logit": 6.7578125
+        },
+        {
+          "token_id": 37339,
+          "token": "ooo",
+          "logit": 6.73046875
+        },
+        {
+          "token_id": 134425,
+          "token": "\u6b63\u5f0f\u4e0a\u7ebf",
+          "logit": 6.7265625
+        },
+        {
+          "token_id": 11351,
+          "token": "zt",
+          "logit": 6.71875
+        },
+        {
+          "token_id": 4493,
+          "token": "oe",
+          "logit": 6.703125
+        },
+        {
+          "token_id": 10090,
+          "token": "zz",
+          "logit": 6.69921875
+        },
+        {
+          "token_id": 84200,
+          "token": "udu",
+          "logit": 6.6015625
+        },
+        {
+          "token_id": 13938,
+          "token": "rait",
+          "logit": 6.5859375
+        },
+        {
+          "token_id": 96515,
+          "token": "\u9002",
+          "logit": 6.5625
+        },
+        {
+          "token_id": 232562,
+          "token": " ficar\u00e1",
+          "logit": 6.5234375
+        },
+        {
+          "token_id": 26826,
+          "token": "ukan",
+          "logit": 6.515625
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 1,
+        "overlap_tokens": [
+          "uz"
+        ],
+        "jaccard": 0.05263157894736842
+      },
+      "hallucination_jlens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 5,
+        "n_generic_top10": 5,
+        "kinds_top10": [
+          "function",
+          "content",
+          "content",
+          "content",
+          "punct",
+          "punct",
+          "content",
+          "function",
+          "cjk",
+          "punct"
+        ],
+        "tokens_top10": [
+          " I",
+          "iv",
+          "uz",
+          "rit",
+          "^{",
+          "^",
+          " Please",
+          " In",
+          "\u9002",
+          "+"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept \u2014 treat as hallucination, not readout."
+      },
+      "hallucination_logit_lens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 10,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "content",
+          "cjk",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "cjk"
+        ],
+        "tokens_top10": [
+          "uz",
+          "\u4e49",
+          "zn",
+          "ounds",
+          " A\u00fan",
+          " bisschen",
+          "ug",
+          " Acomp",
+          "ucc",
+          "\u5f88\u6e05\u695a"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept \u2014 treat as hallucination, not readout."
+      }
+    },
+    {
+      "name": "C_whitespace",
+      "prompt": "   \n",
+      "chat_template": false,
+      "last_token": "   \n",
+      "layer": 23,
+      "jlens": [
+        {
+          "token_id": 262,
+          "token": "   ",
+          "logit": 6.46484375
+        },
+        {
+          "token_id": 256,
+          "token": "  ",
+          "logit": 6.27734375
+        },
+        {
+          "token_id": 96123,
+          "token": "\u5c06",
+          "logit": 5.82421875
+        },
+        {
+          "token_id": 220,
+          "token": " ",
+          "logit": 5.69921875
+        },
+        {
+          "token_id": 257,
+          "token": "    ",
+          "logit": 5.5078125
+        },
+        {
+          "token_id": 197,
+          "token": "\t",
+          "logit": 5.4296875
+        },
+        {
+          "token_id": 285,
+          "token": "       ",
+          "logit": 5.42578125
+        },
+        {
+          "token_id": 109516,
+          "token": "\u8bf4\u7740",
+          "logit": 5.4140625
+        },
+        {
+          "token_id": 406,
+          "token": "     ",
+          "logit": 5.39453125
+        },
+        {
+          "token_id": 1744,
+          "token": " bool",
+          "logit": 5.39453125
+        },
+        {
+          "token_id": 950,
+          "token": "      ",
+          "logit": 4.88671875
+        },
+        {
+          "token_id": 737,
+          "token": " var",
+          "logit": 4.71484375
+        },
+        {
+          "token_id": 309,
+          "token": "           ",
+          "logit": 4.6875
+        },
+        {
+          "token_id": 1779,
+          "token": "          ",
+          "logit": 4.66796875
+        },
+        {
+          "token_id": 95895,
+          "token": "\u5bf9",
+          "logit": 4.64453125
+        },
+        {
+          "token_id": 97804,
+          "token": "\u4f20\u7edf",
+          "logit": 4.59375
+        },
+        {
+          "token_id": 283,
+          "token": " =",
+          "logit": 4.55859375
+        },
+        {
+          "token_id": 96582,
+          "token": "\u53bf",
+          "logit": 4.51171875
+        },
+        {
+          "token_id": 548,
+          "token": "__",
+          "logit": 4.4921875
+        },
+        {
+          "token_id": 1610,
+          "token": " :=",
+          "logit": 4.484375
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 193387,
+          "token": " Avail",
+          "logit": 7.421875
+        },
+        {
+          "token_id": 96123,
+          "token": "\u5c06",
+          "logit": 7.21875
+        },
+        {
+          "token_id": 148967,
+          "token": "\u0627\u0636",
+          "logit": 6.921875
+        },
+        {
+          "token_id": 96041,
+          "token": "\u5176",
+          "logit": 6.80859375
+        },
+        {
+          "token_id": 95895,
+          "token": "\u5bf9",
+          "logit": 6.78515625
+        },
+        {
+          "token_id": 162898,
+          "token": "iliz",
+          "logit": 6.6484375
+        },
+        {
+          "token_id": 64155,
+          "token": "/=",
+          "logit": 6.64453125
+        },
+        {
+          "token_id": 109516,
+          "token": "\u8bf4\u7740",
+          "logit": 6.6015625
+        },
+        {
+          "token_id": 51290,
+          "token": "alist",
+          "logit": 6.58984375
+        },
+        {
+          "token_id": 96342,
+          "token": "\u4f46",
+          "logit": 6.515625
+        },
+        {
+          "token_id": 79448,
+          "token": "ongan",
+          "logit": 6.4375
+        },
+        {
+          "token_id": 95762,
+          "token": "\u6709",
+          "logit": 6.40625
+        },
+        {
+          "token_id": 96161,
+          "token": "\u56e0",
+          "logit": 6.2109375
+        },
+        {
+          "token_id": 95814,
+          "token": "\u4e3a",
+          "logit": 6.18359375
+        },
+        {
+          "token_id": 217525,
+          "token": " Larg",
+          "logit": 6.18359375
+        },
+        {
+          "token_id": 103903,
+          "token": "\u8bf4\u662f",
+          "logit": 6.125
+        },
+        {
+          "token_id": 103793,
+          "token": "\u5426\u5219",
+          "logit": 6.1171875
+        },
+        {
+          "token_id": 110988,
+          "token": "\u6709\u8fc7",
+          "logit": 6.1015625
+        },
+        {
+          "token_id": 4456,
+          "token": "''",
+          "logit": 6.0625
+        },
+        {
+          "token_id": 86059,
+          "token": " \u0441\u043b\u0443\u0447",
+          "logit": 6.04296875
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 2,
+        "overlap_tokens": [
+          "\u5c06",
+          "\u8bf4\u7740"
+        ],
+        "jaccard": 0.1111111111111111
+      },
+      "hallucination_jlens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 3,
+        "n_generic_top10": 7,
+        "kinds_top10": [
+          "whitespace",
+          "whitespace",
+          "cjk",
+          "whitespace",
+          "whitespace",
+          "whitespace",
+          "whitespace",
+          "cjk",
+          "whitespace",
+          "content"
+        ],
+        "tokens_top10": [
+          "   ",
+          "  ",
+          "\u5c06",
+          " ",
+          "    ",
+          "\t",
+          "       ",
+          "\u8bf4\u7740",
+          "     ",
+          " bool"
+        ],
+        "call": "Top tokens look generic (punct/function); not a strong specific-claim dump."
+      },
+      "hallucination_logit_lens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 9,
+        "n_generic_top10": 1,
+        "kinds_top10": [
+          "content",
+          "cjk",
+          "content",
+          "cjk",
+          "cjk",
+          "content",
+          "punct",
+          "cjk",
+          "content",
+          "cjk"
+        ],
+        "tokens_top10": [
+          " Avail",
+          "\u5c06",
+          "\u0627\u0636",
+          "\u5176",
+          "\u5bf9",
+          "iliz",
+          "/=",
+          "\u8bf4\u7740",
+          "alist",
+          "\u4f46"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept \u2014 treat as hallucination, not readout."
+      }
+    }
+  ],
+  "D": {
+    "name": "D_v_mag",
+    "loaded": true,
+    "path": "/Users/achen/neelnanda/results/magnitude.pt",
+    "keys": [
+      "v",
+      "h_high",
+      "h_low",
+      "layer",
+      "model"
+    ],
+    "layer": 23,
+    "jlens": [
+      {
+        "token_id": 12805,
+        "token": " approximately",
+        "logit": 9.96875
+      },
+      {
+        "token_id": 34457,
+        "token": " whatsoever",
+        "logit": 9.8125
+      },
+      {
+        "token_id": 211174,
+        "token": "laut",
+        "logit": 9.21875
+      },
+      {
+        "token_id": 76111,
+        "token": " Approximately",
+        "logit": 8.6953125
+      },
+      {
+        "token_id": 39226,
+        "token": " Extended",
+        "logit": 8.6640625
+      },
+      {
+        "token_id": 26542,
+        "token": "dem",
+        "logit": 8.5625
+      },
+      {
+        "token_id": 11244,
+        "token": " extended",
+        "logit": 8.484375
+      },
+      {
+        "token_id": 51403,
+        "token": "Extended",
+        "logit": 8.4140625
+      },
+      {
+        "token_id": 14819,
+        "token": "itled",
+        "logit": 8.3203125
+      },
+      {
+        "token_id": 23195,
+        "token": " accompanied",
+        "logit": 8.1875
+      },
+      {
+        "token_id": 61557,
+        "token": " massively",
+        "logit": 8.078125
+      },
+      {
+        "token_id": 140575,
+        "token": "\u6700\u6700",
+        "logit": 8.078125
+      },
+      {
+        "token_id": 93395,
+        "token": "approximately",
+        "logit": 8.0546875
+      },
+      {
+        "token_id": 16676,
+        "token": " expanded",
+        "logit": 7.95703125
+      },
+      {
+        "token_id": 107209,
+        "token": "\u5c3d\u6709",
+        "logit": 7.921875
+      },
+      {
+        "token_id": 94676,
+        "token": "frauen",
+        "logit": 7.734375
+      },
+      {
+        "token_id": 83209,
+        "token": " astronomical",
+        "logit": 7.73046875
+      },
+      {
+        "token_id": 55718,
+        "token": " Combined",
+        "logit": 7.6640625
+      },
+      {
+        "token_id": 34310,
+        "token": "expanded",
+        "logit": 7.6171875
+      },
+      {
+        "token_id": 63494,
+        "token": " Billion",
+        "logit": 7.6171875
+      }
+    ],
+    "logit_lens": [
+      {
+        "token_id": 211174,
+        "token": "laut",
+        "logit": 9.8203125
+      },
+      {
+        "token_id": 237632,
+        "token": " c\u1ed1i",
+        "logit": 9.375
+      },
+      {
+        "token_id": 34457,
+        "token": " whatsoever",
+        "logit": 9.1875
+      },
+      {
+        "token_id": 89837,
+        "token": "HeaderText",
+        "logit": 9.109375
+      },
+      {
+        "token_id": 23628,
+        "token": " WAY",
+        "logit": 9.046875
+      },
+      {
+        "token_id": 26542,
+        "token": "dem",
+        "logit": 8.7734375
+      },
+      {
+        "token_id": 49359,
+        "token": "usch",
+        "logit": 8.578125
+      },
+      {
+        "token_id": 242625,
+        "token": " m\u00e2cho",
+        "logit": 8.515625
+      },
+      {
+        "token_id": 102591,
+        "token": "\u65e0\u5f62",
+        "logit": 8.3359375
+      },
+      {
+        "token_id": 19282,
+        "token": "makers",
+        "logit": 8.3125
+      },
+      {
+        "token_id": 12805,
+        "token": " approximately",
+        "logit": 8.2890625
+      },
+      {
+        "token_id": 177376,
+        "token": "ibra",
+        "logit": 8.21875
+      },
+      {
+        "token_id": 1487,
+        "token": "ily",
+        "logit": 8.140625
+      },
+      {
+        "token_id": 207648,
+        "token": "chern",
+        "logit": 8.1171875
+      },
+      {
+        "token_id": 40728,
+        "token": " h\u00e1",
+        "logit": 8.046875
+      },
+      {
+        "token_id": 14819,
+        "token": "itled",
+        "logit": 8.03125
+      },
+      {
+        "token_id": 122688,
+        "token": "\u7eaa\u5143",
+        "logit": 7.96875
+      },
+      {
+        "token_id": 226375,
+        "token": " eterno",
+        "logit": 7.96875
+      },
+      {
+        "token_id": 168032,
+        "token": "\u0432\u043e\u0437\u043c\u043e",
+        "logit": 7.90234375
+      },
+      {
+        "token_id": 217657,
+        "token": "\u09cb\u09a8",
+        "logit": 7.859375
+      }
+    ],
+    "overlap@10": {
+      "k": 10,
+      "n_overlap": 3,
+      "overlap_tokens": [
+        " whatsoever",
+        "laut",
+        "dem"
+      ],
+      "jaccard": 0.17647058823529413
+    }
+  }
+}

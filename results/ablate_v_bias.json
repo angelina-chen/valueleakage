@@ -1,0 +1,10 @@
+{
+  "p_above_good": 0.25,
+  "p_below_good": 0.75,
+  "n_above": 4,
+  "n_below": 4,
+  "bias": 0.0,
+  "se": 0.30618621784789724,
+  "dropped": 0,
+  "threshold": 14898555.0
+}

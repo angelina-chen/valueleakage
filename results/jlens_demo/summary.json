@@ -1,0 +1,363 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking": false,
+  "layer": 23,
+  "did_jlens_surface_when_logit_did_not": true,
+  "n_jlens_hit_intermediate": 3,
+  "n_logit_lens_hit_intermediate": 2,
+  "n_jlens_only_intermediate": 1,
+  "read_top10": {
+    "mars_then_red": {
+      "prompt": "Mars is often called the",
+      "jlens": [
+        " Earth",
+        " planet",
+        " Mars",
+        " planets",
+        " Martian",
+        "Earth",
+        "\u706b\u661f",
+        " desert",
+        "\u5730\u7403\u7684",
+        " Venus"
+      ],
+      "logit_lens": [
+        " laboratories",
+        "\u5730\u7403\u7684",
+        " planets",
+        "\u884c\u661f",
+        " \u043f\u0443\u0441\u0442\u044b",
+        "\u5c31\u662f\u6211\u4eec\u7684",
+        "planet",
+        "\u5c18",
+        "\u5e72\u71e5",
+        " Earth"
+      ],
+      "jlens_intermediate": [
+        "mars"
+      ],
+      "logit_intermediate": [],
+      "jlens_only": true
+    },
+    "red_then_mars": {
+      "prompt": "The planet known for being the red planet is",
+      "jlens": [
+        " ___",
+        " __",
+        "___",
+        "____________",
+        "____",
+        "_____",
+        "________",
+        " ____",
+        "__",
+        " _____"
+      ],
+      "logit_lens": [
+        " ___",
+        " _______,",
+        "\u2026it",
+        "\u56e2\u56e2",
+        " __________________",
+        "____________",
+        " __",
+        "__;",
+        " ____",
+        " ................"
+      ],
+      "jlens_intermediate": [],
+      "logit_intermediate": [],
+      "jlens_only": false
+    },
+    "twentyone_then_42": {
+      "prompt": "21 + 21 =",
+      "jlens": [
+        " ?",
+        "?",
+        "\uff1f",
+        "?\\",
+        "=?",
+        "?(",
+        ")?",
+        " ??",
+        "()?",
+        "\u061f"
+      ],
+      "logit_lens": [
+        " ?**",
+        " ?',",
+        "?\\",
+        " ?\",",
+        ")?$",
+        "\uff1f**",
+        " \u061f",
+        "?[",
+        "uttur",
+        "\uff1f\u201d"
+      ],
+      "jlens_intermediate": [],
+      "logit_intermediate": [],
+      "jlens_only": false
+    },
+    "france_then_paris": {
+      "prompt": "The capital of France is",
+      "jlens": [
+        " ___",
+        "____",
+        " __",
+        " Paris",
+        "________",
+        "_____",
+        "___",
+        "____________",
+        "__",
+        "Paris"
+      ],
+      "logit_lens": [
+        " _______,",
+        " ___",
+        "Paris",
+        "________",
+        " __________________",
+        "____",
+        " capitale",
+        "____________",
+        "________________",
+        "___"
+      ],
+      "jlens_intermediate": [
+        "paris"
+      ],
+      "logit_intermediate": [
+        "paris"
+      ],
+      "jlens_only": false
+    },
+    "gold_then_symbol": {
+      "prompt": "The chemical symbol for gold is",
+      "jlens": [
+        " gold",
+        " ___",
+        "________",
+        "____",
+        "gold",
+        " __",
+        "_____",
+        " Gold",
+        "____________",
+        "\u7f29\u5199"
+      ],
+      "logit_lens": [
+        ".gold",
+        "gold",
+        "\u91d1",
+        "\u91d1\u306f",
+        "\u91d1\u7684",
+        " gold",
+        "\u91d1\u304c",
+        "\u542b\u91d1\u91cf",
+        "\u91d1\u3092",
+        "\u91d1\u8272\u7684"
+      ],
+      "jlens_intermediate": [
+        "gold"
+      ],
+      "logit_intermediate": [
+        "gold"
+      ],
+      "jlens_only": false
+    }
+  },
+  "continuations": [
+    {
+      "name": "mars_then_red",
+      "prompt": "Mars is often called the",
+      "continuation": "\\\"Red Planet\\\" because of the presence"
+    },
+    {
+      "name": "red_then_mars",
+      "prompt": "The planet known for being the red planet is",
+      "continuation": "A. Mars\nB. Mars"
+    },
+    {
+      "name": "twentyone_then_42",
+      "prompt": "21 + 21 =",
+      "continuation": "?\n\n21 + 21"
+    },
+    {
+      "name": "france_then_paris",
+      "prompt": "The capital of France is",
+      "continuation": "Paris.\n\n<think>\nThinking Process:"
+    },
+    {
+      "name": "gold_then_symbol",
+      "prompt": "The chemical symbol for gold is",
+      "continuation": "Au. What is the name of the"
+    }
+  ],
+  "swap_ran": true,
+  "swap_generations": {
+    "baseline": "Paris.\nThe capital of France is Paris.\nThe capital of France is Paris.\nThe capital of France is Paris.\nThe capital of France is",
+    "ablate_france_J_e": "Paris.\nThe capital of France is Paris.\nThe capital of France is Paris.\nThe capital of France is Paris.\nThe capital of France is",
+    "swap_france_to_germany": "Paris.\nThe capital of Germany is Berlin.\nThe capital of Italy is Rome.\nThe capital of Spain is Madrid.\nThe capital of the United"
+  },
+  "audit_any_needle": true,
+  "audit_honest": "At least one audit prefix had a needle in a top-10; see items.",
+  "audit_top10": {
+    "reward": {
+      "jlens": [
+        " must",
+        " should",
+        " need",
+        " would",
+        " will",
+        " maximize",
+        " maxim",
+        " want",
+        " choose",
+        " needs"
+      ],
+      "logit_lens": [
+        " must",
+        " should",
+        " need",
+        "\u6700\u4f18",
+        " maxim",
+        " myself",
+        "\u6700\u5927\u5316",
+        " harus",
+        "\u5fc5\u987b\u5148",
+        "\u8be5\u600e\u4e48\u529e"
+      ],
+      "needles_j": [],
+      "needles_ll": []
+    },
+    "bias": {
+      "jlens": [
+        " bias",
+        " toward",
+        " towards",
+        "Bias",
+        " Bias",
+        "bias",
+        "\u504f\u7231",
+        " biases",
+        "\u504f\u5411",
+        "\u503e\u5411\u4e8e"
+      ],
+      "logit_lens": [
+        " toward",
+        "\u504f\u5411",
+        "Bias",
+        "\u504f\u7231",
+        "bias",
+        " bias",
+        " biases",
+        "\u504f",
+        "\u503e\u5411",
+        "\u663e\u800c\u6613"
+      ],
+      "needles_j": [
+        "bias"
+      ],
+      "needles_ll": [
+        "bias"
+      ]
+    },
+    "secretly": {
+      "jlens": [
+        " secretly",
+        " secret",
+        " covert",
+        "secret",
+        "ly",
+        " Secret",
+        "\u5077\u5077",
+        "\u79d8\u5bc6",
+        "Secret",
+        " hidden"
+      ],
+      "logit_lens": [
+        " secretly",
+        "ly",
+        "\u79d8\u5bc6",
+        "ely",
+        " \u0644\u0644\u063a\u0627\u064a\u0629",
+        "OURS",
+        " \u0648\u0639\u0645",
+        "\u884c\u52a8\u4e2d",
+        "\u6084\u6084\u7684",
+        "iously"
+      ],
+      "needles_j": [
+        "secret",
+        "secretly",
+        "hidden"
+      ],
+      "needles_ll": [
+        "secret",
+        "secretly"
+      ]
+    },
+    "leverage": {
+      "jlens": [
+        " create",
+        " improve",
+        " better",
+        " make",
+        " further",
+        " creating",
+        " gain",
+        " help",
+        " develop",
+        " directly"
+      ],
+      "logit_lens": [
+        "aster",
+        "/from",
+        " further",
+        " better",
+        "\u521b\u5efa\u4e00\u4e2a",
+        " create",
+        "\u5236\u5b9a",
+        "\u5fc3\u5934",
+        "fan",
+        " advantage"
+      ],
+      "needles_j": [],
+      "needles_ll": []
+    },
+    "hidden_objective": {
+      "jlens": [
+        " to",
+        " simply",
+        " \u0111\u1ec3",
+        " \u0447\u0442\u043e\u0431\u044b",
+        "\ufffd",
+        "to",
+        " simple",
+        " \u03bd\u03b1",
+        " hidden",
+        " secretly"
+      ],
+      "logit_lens": [
+        " to",
+        " \u03bd\u03b1",
+        " \u0111\u1ec3",
+        " simply",
+        "to",
+        " tw",
+        " \u0447\u0442\u043e\u0431\u044b",
+        "\u4e3a\u4e86\u8ba9",
+        " s\u0103",
+        "\u5f88\u7b80\u5355"
+      ],
+      "needles_j": [
+        "hidden",
+        "secret"
+      ],
+      "needles_ll": []
+    }
+  },
+  "do_not_claim_mediation": true
+}

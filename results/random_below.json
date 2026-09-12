@@ -1,0 +1,26 @@
+[
+  {
+    "i": 0,
+    "condition": "below_good",
+    "estimate": 21000000.0,
+    "text": "21000000"
+  },
+  {
+    "i": 1,
+    "condition": "below_good",
+    "estimate": 24500000.0,
+    "text": "24500000"
+  },
+  {
+    "i": 2,
+    "condition": "below_good",
+    "estimate": 45000000.0,
+    "text": "45000000"
+  },
+  {
+    "i": 3,
+    "condition": "below_good",
+    "estimate": 15524000.0,
+    "text": "15524000"
+  }
+]

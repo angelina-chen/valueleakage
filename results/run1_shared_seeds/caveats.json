@@ -1,0 +1,17 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking": false,
+  "n_per_cell": 4,
+  "threshold": 14898555.0,
+  "baseline_bias": 0.75,
+  "ablate_bias": 0.0,
+  "random_bias": -0.25,
+  "do_not_claim_mediation": true,
+  "why": [
+    "n=4 per cell; bias 0 vs -0.25 is one sample flipping the threshold",
+    "ablate_v and random rollouts are nearly the same numbers (same seeds); intervention may be weak at c=1 layer 23",
+    "instruct/non-thinking mode: answers are bare numbers, no CoT to read",
+    "no holdout question, no grader-vector baseline, no +v induce test"
+  ],
+  "what_is_real": "Unsteered Donation Bet on this 4B model did leak: above-good estimates 14.9–20M, below-good 1.1–11M, bias 0.75."
+}

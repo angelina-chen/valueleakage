@@ -1,0 +1,8 @@
+{
+  "threshold": 14898555.0,
+  "biases": {
+    "baseline": 0.75,
+    "ablate_v": 0.0,
+    "random": 0.0
+  }
+}

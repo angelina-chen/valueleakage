@@ -1,0 +1,499 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking": false,
+  "layer": 23,
+  "method": "jlens+unembed",
+  "jlens": {
+    "repo": "camilablank/workspace-lenses",
+    "file": "qwen3.5-4b/j-lens/lens.pt",
+    "layer": 23,
+    "tuned_lens": "skipped; no local 4B tuned-lens file",
+    "local_path": "/Users/achen/neelnanda/artifacts/jlens/qwen3.5-4b/j-lens/lens.pt",
+    "source_layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "J_store": "dict",
+    "used_index": 23,
+    "J_l_shape": [
+      2560,
+      2560
+    ]
+  },
+  "architecture": {
+    "path": "/Users/achen/neelnanda/artifacts/jlens/qwen3.5-4b/j-lens/lens.pt",
+    "keys": [
+      "J",
+      "n_prompts",
+      "source_layers",
+      "d_model",
+      "provenance"
+    ],
+    "has_bias": false,
+    "family": "tuned-lens-class: learned d×d linear map then RMSNorm+unembed; no bias term in lens.pt (linear, not affine). J is an averaged Jacobian to the penultimate layer, not a trained tuned-lens fit.",
+    "J_l_shape": [
+      2560,
+      2560
+    ],
+    "dtype_on_disk": "torch.float16",
+    "d_model": 2560,
+    "target_layer": 30,
+    "n_prompts": 25,
+    "provenance": {
+      "model_id": "Qwen/Qwen3.5-4B",
+      "dataset_id": "NeelNanda/pile-10k",
+      "target_layer": 30,
+      "n_prompts": 25,
+      "config_json": "{\"estimator\": \"standard\"}"
+    },
+    "layer": 23,
+    "cos_J_vs_I": 0.8579928874969482,
+    "diag_mean": 0.9910770654678345,
+    "diag_std": 0.08803548663854599,
+    "fro_J_minus_I": 30.12879180908203,
+    "layer30_is_identity": true
+  },
+  "template_lens": {
+    "ran": false,
+    "repo": "camilablank/workspace-lenses",
+    "local_4b_template": false,
+    "note": "skipped: camilablank/workspace-lenses has template-lens only for qwen3.6-27b (phrase directions, d_model=5120, 64 layers), not a drop-in Qwen3.5-4B weight+forward"
+  },
+  "overlap@10_on": {
+    "france_capital": {
+      "k": 10,
+      "n_overlap": 6,
+      "overlap_tokens": [
+        " ___",
+        "____",
+        "________",
+        "___",
+        "____________",
+        "Paris"
+      ],
+      "jaccard": 0.42857142857142855
+    },
+    "largest_planet": {
+      "k": 10,
+      "n_overlap": 0,
+      "overlap_tokens": [],
+      "jaccard": 0.0
+    },
+    "two_plus_two": {
+      "k": 10,
+      "n_overlap": 3,
+      "overlap_tokens": [
+        " ?",
+        "?\\",
+        "()?"
+      ],
+      "jaccard": 0.17647058823529413
+    },
+    "gold_symbol": {
+      "k": 10,
+      "n_overlap": 2,
+      "overlap_tokens": [
+        " gold",
+        "gold"
+      ],
+      "jaccard": 0.1111111111111111
+    },
+    "first_president": {
+      "k": 10,
+      "n_overlap": 2,
+      "overlap_tokens": [
+        " ____",
+        " __________________"
+      ],
+      "jaccard": 0.1111111111111111
+    }
+  },
+  "overlap@10_off": {
+    "empty": {
+      "k": 10,
+      "n_overlap": 0,
+      "overlap_tokens": [],
+      "jaccard": 0.0
+    },
+    "hello": {
+      "k": 10,
+      "n_overlap": 1,
+      "overlap_tokens": [
+        "uz"
+      ],
+      "jaccard": 0.05263157894736842
+    },
+    "period": {
+      "k": 10,
+      "n_overlap": 3,
+      "overlap_tokens": [
+        "4",
+        "5",
+        "0"
+      ],
+      "jaccard": 0.17647058823529413
+    },
+    "gaussian_matched_rms": {
+      "k": 10,
+      "n_overlap": 2,
+      "overlap_tokens": [
+        "较好地",
+        " Swe"
+      ],
+      "jaccard": 0.1111111111111111
+    },
+    "random_unit_scaled": {
+      "k": 10,
+      "n_overlap": 2,
+      "overlap_tokens": [
+        "grunt",
+        " bindings"
+      ],
+      "jaccard": 0.1111111111111111
+    },
+    "v_leak": {
+      "k": 10,
+      "n_overlap": 1,
+      "overlap_tokens": [
+        " >("
+      ],
+      "jaccard": 0.05263157894736842
+    }
+  },
+  "logit_cosine_on": {
+    "france_capital": 0.24040640890598297,
+    "largest_planet": 0.19607821106910706,
+    "two_plus_two": 0.1299544721841812,
+    "gold_symbol": 0.37878847122192383,
+    "first_president": 0.22438649833202362
+  },
+  "logit_cosine_off": {
+    "empty": 0.7002861499786377,
+    "hello": 0.6424127817153931,
+    "period": 0.8114282488822937,
+    "gaussian_matched_rms": 0.8515906929969788,
+    "random_unit_scaled": 0.7991352081298828,
+    "v_leak": 0.8690347671508789
+  },
+  "on_top10": {
+    "france_capital": {
+      "jlens": [
+        " ___",
+        "____",
+        " __",
+        " Paris",
+        "________",
+        "_____",
+        "___",
+        "____________",
+        "__",
+        "Paris"
+      ],
+      "logit_lens": [
+        " _______,",
+        " ___",
+        "Paris",
+        "________",
+        " __________________",
+        "____",
+        " capitale",
+        "____________",
+        "________________",
+        "___"
+      ]
+    },
+    "largest_planet": {
+      "jlens": [
+        " __",
+        "____",
+        "_____",
+        "____________",
+        "________",
+        " Jupiter",
+        " ___",
+        " planets",
+        "___",
+        " __________________"
+      ],
+      "logit_lens": [
+        " _______,",
+        "太阳系",
+        " sanks",
+        " uranus",
+        " Inizi",
+        "ยักษ์",
+        " Pluto",
+        "hosts",
+        "wana",
+        " ................"
+      ]
+    },
+    "two_plus_two": {
+      "jlens": [
+        " ?",
+        "?",
+        "？",
+        "?\\",
+        "=?",
+        ")?",
+        "؟",
+        "()?",
+        " ___",
+        " $?"
+      ],
+      "logit_lens": [
+        " ?**",
+        " ?\",",
+        " ?',",
+        "?\\",
+        "uttur",
+        " ؟",
+        "=?\",",
+        "?\",",
+        "()?",
+        " ?"
+      ]
+    },
+    "gold_symbol": {
+      "jlens": [
+        " gold",
+        " ___",
+        "________",
+        "____",
+        "gold",
+        " __",
+        "_____",
+        " Gold",
+        "____________",
+        "缩写"
+      ],
+      "logit_lens": [
+        ".gold",
+        "gold",
+        "金",
+        "金は",
+        "金的",
+        " gold",
+        "金が",
+        "含金量",
+        "金を",
+        "金色的"
+      ]
+    },
+    "first_president": {
+      "jlens": [
+        " ___",
+        " ____",
+        " __",
+        "_____",
+        "____",
+        " __________________",
+        "________",
+        " _____",
+        " ______",
+        "____________"
+      ],
+      "logit_lens": [
+        " _______,",
+        "…]",
+        " ..........",
+        " __________________",
+        "born",
+        " ____",
+        "...........",
+        " ................",
+        "…**",
+        "…but"
+      ]
+    }
+  },
+  "off_top10": {
+    "empty": {
+      "jlens": [
+        "_into",
+        "想法",
+        "政权",
+        "低价",
+        "话题",
+        "赞同",
+        "室一厅",
+        "觉",
+        "ách",
+        "护"
+      ],
+      "logit_lens": [
+        " sín",
+        "精英",
+        "行之",
+        " Journalism",
+        "ostr",
+        "ENTIC",
+        "inian",
+        "avn",
+        "andi",
+        "andin"
+      ]
+    },
+    "hello": {
+      "jlens": [
+        " I",
+        "iv",
+        "uz",
+        "rit",
+        "^{",
+        "^",
+        " Please",
+        " In",
+        "适",
+        "+"
+      ],
+      "logit_lens": [
+        "uz",
+        "义",
+        "zn",
+        "ounds",
+        " Aún",
+        " bisschen",
+        "ug",
+        " Acomp",
+        "ucc",
+        "很清楚"
+      ]
+    },
+    "period": {
+      "jlens": [
+        " ",
+        "   ",
+        "     ",
+        " |",
+        "+",
+        "4",
+        "5",
+        "2",
+        "]",
+        "0"
+      ],
+      "logit_lens": [
+        "uz",
+        "4",
+        "_handler",
+        "zn",
+        "5",
+        "开",
+        "义",
+        "8",
+        "1",
+        "0"
+      ]
+    },
+    "gaussian_matched_rms": {
+      "jlens": [
+        "较好地",
+        "尼迪",
+        "-scal",
+        " Closed",
+        " Swe",
+        " Scal",
+        "全家人",
+        "calar",
+        "_Un",
+        " Uns"
+      ],
+      "logit_lens": [
+        "较好地",
+        "hn",
+        "无际",
+        "fu",
+        "eneg",
+        " denomin",
+        " bì",
+        " Swe",
+        "ură",
+        "emasan"
+      ]
+    },
+    "random_unit_scaled": {
+      "jlens": [
+        "grunt",
+        "inand",
+        " bindings",
+        " standalone",
+        "呱",
+        "enga",
+        " stood",
+        " stand",
+        " boarded",
+        "亀"
+      ],
+      "logit_lens": [
+        "纳",
+        "夷",
+        " continued",
+        "照",
+        "ze",
+        "grunt",
+        "散",
+        " bindings",
+        "ak",
+        "ientos"
+      ]
+    },
+    "v_leak": {
+      "jlens": [
+        "庞大",
+        "亿元以上",
+        "万以上",
+        " huge",
+        " HUGE",
+        "庞大的",
+        " enormous",
+        "超大",
+        " >(",
+        "米以上"
+      ],
+      "logit_lens": [
+        "深水",
+        "儿",
+        "nü",
+        " >(",
+        "enang",
+        "龐",
+        " potriv",
+        "hashtags",
+        " عب",
+        "兒"
+      ]
+    }
+  },
+  "paragraph": "J-Lens on Qwen3.5-4B layer 23 is a 2560×2560 linear Jacobian with no bias (cos(J,I)=0.858; layer 30 is exactly I), i.e. tuned-lens-class: learned map then RMSNorm+unembed, not a trained tuned lens and not a nonlinear decoder. On-distribution, mean overlap@10 vs logit-lens is 2.6/10 and mean logit-cosine is 0.234: they are not the same ranking. J-Lens is the more clustered next-token map (France: Paris among blanks, overlap 6/10; planet: Jupiter/planets among blanks; gold: gold/Gold/缩写), while logit-lens is broader/noisier (capitale; 太阳系/uranus/Pluto; 金). Neither reads '4' or 'Washington'. Off-distribution mean overlap@10 is 1.5/10; v_leak logit-cosine=0.869 but top-10 overlap only 1/10 — J-Lens 庞大/huge/enormous vs logit-lens junk (深水/儿/nü). Empty/Hello. still yield content words (想法/政权/低价; I/Please). So J-Lens is a denoised next-token map: more fluent than logit-lens, more willing to confabulate off-distribution, not a faithful concept detector.",
+  "do_not_claim_true_internals": true
+}

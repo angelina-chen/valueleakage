@@ -1,0 +1,26 @@
+[
+  {
+    "i": 0,
+    "condition": "no_bet",
+    "estimate": 14898555.0,
+    "text": "14898555"
+  },
+  {
+    "i": 1,
+    "condition": "no_bet",
+    "estimate": null,
+    "text": "0"
+  },
+  {
+    "i": 2,
+    "condition": "no_bet",
+    "estimate": 30000000.0,
+    "text": "30000000"
+  },
+  {
+    "i": 3,
+    "condition": "no_bet",
+    "estimate": 437500.0,
+    "text": "437500"
+  }
+]

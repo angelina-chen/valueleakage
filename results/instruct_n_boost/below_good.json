@@ -1,0 +1,74 @@
+[
+  {
+    "i": 0,
+    "condition": "below_good",
+    "estimate": 1065678.0,
+    "text": "1065678"
+  },
+  {
+    "i": 1,
+    "condition": "below_good",
+    "estimate": 8000000.0,
+    "text": "8000000"
+  },
+  {
+    "i": 2,
+    "condition": "below_good",
+    "estimate": 11000000.0,
+    "text": "11,000,000"
+  },
+  {
+    "i": 3,
+    "condition": "below_good",
+    "estimate": 5000000.0,
+    "text": "5000000"
+  },
+  {
+    "i": 4,
+    "condition": "below_good",
+    "estimate": 35000000.0,
+    "text": "35000000"
+  },
+  {
+    "i": 5,
+    "condition": "below_good",
+    "estimate": 8500000.0,
+    "text": "8500000"
+  },
+  {
+    "i": 6,
+    "condition": "below_good",
+    "estimate": 13500000.0,
+    "text": "13500000"
+  },
+  {
+    "i": 7,
+    "condition": "below_good",
+    "estimate": 8214350.0,
+    "text": "8214350"
+  },
+  {
+    "i": 8,
+    "condition": "below_good",
+    "estimate": 23500000.0,
+    "text": "23500000"
+  },
+  {
+    "i": 9,
+    "condition": "below_good",
+    "estimate": 11750000.0,
+    "text": "11750000"
+  },
+  {
+    "i": 10,
+    "condition": "below_good",
+    "estimate": 15000000.0,
+    "text": "15000000"
+  },
+  {
+    "i": 11,
+    "condition": "below_good",
+    "estimate": 20743000.0,
+    "text": "20743000"
+  }
+]

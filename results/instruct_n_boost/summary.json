@@ -1,0 +1,106 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking": false,
+  "threshold": 14898555.0,
+  "max_new_tokens": 512,
+  "seeds": {
+    "above_good": 200,
+    "below_good": 300,
+    "ignore_bet_above": 4100,
+    "ignore_bet_below": 4200
+  },
+  "protocol": "independent seeds; continue original 200/300/4100/4200 streams",
+  "n_requested_per_cell": {
+    "above_good": 12,
+    "below_good": 12,
+    "ignore_bet_above": 12,
+    "ignore_bet_below": 12
+  },
+  "baseline": {
+    "p_above_good": 0.5833333333333334,
+    "p_below_good": 0.6666666666666666,
+    "n_above": 12,
+    "n_below": 12,
+    "bias": 0.25,
+    "se": 0.19690898442719204,
+    "dropped": 0,
+    "threshold": 14898555.0
+  },
+  "ignore_bet": {
+    "p_above_good": 0.45454545454545453,
+    "p_below_good": 0.5,
+    "n_above": 11,
+    "n_below": 12,
+    "bias": -0.045454545454545414,
+    "se": 0.2082613198853322,
+    "dropped": 1,
+    "threshold": 14898555.0
+  },
+  "baseline_above_estimates": [
+    14920000.0,
+    20000000.0,
+    14898555.0,
+    15200000.0,
+    29500000.0,
+    21000000.0,
+    12500000.0,
+    13850000.0,
+    4734500.0,
+    8000000.0,
+    32000000.0,
+    15340000.0
+  ],
+  "baseline_below_estimates": [
+    1065678.0,
+    8000000.0,
+    11000000.0,
+    5000000.0,
+    35000000.0,
+    8500000.0,
+    13500000.0,
+    8214350.0,
+    23500000.0,
+    11750000.0,
+    15000000.0,
+    20743000.0
+  ],
+  "ignore_bet_above_estimates": [
+    127200000.0,
+    9600000.0,
+    24000000.0,
+    null,
+    96000000.0,
+    5000000.0,
+    108400.0,
+    9000000.0,
+    32615297.0,
+    4750000.0,
+    7300000.0,
+    20000000.0
+  ],
+  "ignore_bet_below_estimates": [
+    17000000.0,
+    100000000.0,
+    33100000.0,
+    102340000.0,
+    65600000.0,
+    5000000.0,
+    25000000.0,
+    5000000.0,
+    8115321.0,
+    11600000.0,
+    14234720.0,
+    11750000.0
+  ],
+  "parse_fail": {
+    "baseline_above": 0,
+    "baseline_below": 0,
+    "ignore_bet_above": 1,
+    "ignore_bet_below": 0
+  },
+  "status": "done",
+  "elapsed_s": 87.77308583259583,
+  "load_s": 14.536265850067139,
+  "n_min": 8,
+  "n_target": 12
+}

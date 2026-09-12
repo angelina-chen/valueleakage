@@ -1,0 +1,2472 @@
+{
+  "model": "Qwen/Qwen3.5-4B",
+  "thinking": false,
+  "layer": 23,
+  "method": "jlens+unembed",
+  "prefills_only": true,
+  "elapsed_s": 23.891538858413696,
+  "jlens": {
+    "repo": "camilablank/workspace-lenses",
+    "file": "qwen3.5-4b/j-lens/lens.pt",
+    "layer": 23,
+    "tuned_lens": "skipped; no local 4B tuned-lens file",
+    "local_path": "/Users/achen/neelnanda/artifacts/jlens/qwen3.5-4b/j-lens/lens.pt",
+    "source_layers": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30
+    ],
+    "J_store": "dict",
+    "used_index": 23,
+    "J_l_shape": [
+      2560,
+      2560
+    ]
+  },
+  "architecture": {
+    "path": "/Users/achen/neelnanda/artifacts/jlens/qwen3.5-4b/j-lens/lens.pt",
+    "keys": [
+      "J",
+      "n_prompts",
+      "source_layers",
+      "d_model",
+      "provenance"
+    ],
+    "has_bias": false,
+    "family": "tuned-lens-class: learned d×d linear map then RMSNorm+unembed; no bias term in lens.pt (linear, not affine). J is an averaged Jacobian to the penultimate layer, not a trained tuned-lens fit.",
+    "J_l_shape": [
+      2560,
+      2560
+    ],
+    "dtype_on_disk": "torch.float16",
+    "d_model": 2560,
+    "target_layer": 30,
+    "n_prompts": 25,
+    "provenance": {
+      "model_id": "Qwen/Qwen3.5-4B",
+      "dataset_id": "NeelNanda/pile-10k",
+      "target_layer": 30,
+      "n_prompts": 25,
+      "config_json": "{\"estimator\": \"standard\"}"
+    },
+    "layer": 23,
+    "cos_J_vs_I": 0.8579928874969482,
+    "diag_mean": 0.9910770654678345,
+    "diag_std": 0.08803548663854599,
+    "fro_J_minus_I": 30.12879180908203,
+    "layer30_is_identity": true
+  },
+  "template_lens": {
+    "ran": false,
+    "repo": "camilablank/workspace-lenses",
+    "local_4b_template": false,
+    "note": "skipped: camilablank/workspace-lenses has template-lens only for qwen3.6-27b (phrase directions, d_model=5120, 64 layers), not a drop-in Qwen3.5-4B weight+forward"
+  },
+  "tuned_lens": "not trained; J is already a linear map then unembed",
+  "mean_overlap@10_on": 2.6,
+  "mean_overlap@10_off": 1.5,
+  "mean_logit_cosine_on": 0.23392281234264373,
+  "mean_logit_cosine_off": 0.7789813081423441,
+  "v_leak_logit_cosine": 0.8690347671508789,
+  "on_distribution": [
+    {
+      "name": "france_capital",
+      "dist": "on",
+      "source": "last_token_residual",
+      "layer": 23,
+      "rms": 0.5124930143356323,
+      "l2": 25.930335998535156,
+      "jlens_top10": [
+        " ___",
+        "____",
+        " __",
+        " Paris",
+        "________",
+        "_____",
+        "___",
+        "____________",
+        "__",
+        "Paris"
+      ],
+      "logit_lens_top10": [
+        " _______,",
+        " ___",
+        "Paris",
+        "________",
+        " __________________",
+        "____",
+        " capitale",
+        "____________",
+        "________________",
+        "___"
+      ],
+      "jlens": [
+        {
+          "token_id": 7201,
+          "token": " ___",
+          "logit": 11.9296875
+        },
+        {
+          "token_id": 2062,
+          "token": "____",
+          "logit": 11.8984375
+        },
+        {
+          "token_id": 1259,
+          "token": " __",
+          "logit": 11.8125
+        },
+        {
+          "token_id": 11751,
+          "token": " Paris",
+          "logit": 11.6640625
+        },
+        {
+          "token_id": 3846,
+          "token": "________",
+          "logit": 11.515625
+        },
+        {
+          "token_id": 77740,
+          "token": "_____",
+          "logit": 11.1328125
+        },
+        {
+          "token_id": 5785,
+          "token": "___",
+          "logit": 11.0859375
+        },
+        {
+          "token_id": 40015,
+          "token": "____________",
+          "logit": 10.9609375
+        },
+        {
+          "token_id": 548,
+          "token": "__",
+          "logit": 10.8828125
+        },
+        {
+          "token_id": 57590,
+          "token": "Paris",
+          "logit": 10.7265625
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 54643,
+          "token": " _______,",
+          "logit": 12.3046875
+        },
+        {
+          "token_id": 7201,
+          "token": " ___",
+          "logit": 11.84375
+        },
+        {
+          "token_id": 57590,
+          "token": "Paris",
+          "logit": 11.3671875
+        },
+        {
+          "token_id": 3846,
+          "token": "________",
+          "logit": 11.15625
+        },
+        {
+          "token_id": 42390,
+          "token": " __________________",
+          "logit": 11.15625
+        },
+        {
+          "token_id": 2062,
+          "token": "____",
+          "logit": 11.0859375
+        },
+        {
+          "token_id": 178048,
+          "token": " capitale",
+          "logit": 11.078125
+        },
+        {
+          "token_id": 40015,
+          "token": "____________",
+          "logit": 11.0546875
+        },
+        {
+          "token_id": 7443,
+          "token": "________________",
+          "logit": 10.3125
+        },
+        {
+          "token_id": 5785,
+          "token": "___",
+          "logit": 10.265625
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 6,
+        "overlap_tokens": [
+          " ___",
+          "____",
+          "________",
+          "___",
+          "____________",
+          "Paris"
+        ],
+        "jaccard": 0.42857142857142855
+      },
+      "logit_cosine": 0.24040640890598297,
+      "fluent_jlens": {
+        "setting": "on",
+        "n_contentful_top10": 2,
+        "n_generic_top10": 8,
+        "kinds_top10": [
+          "punct",
+          "punct",
+          "punct",
+          "content",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "content"
+        ],
+        "tokens_top10": [
+          " ___",
+          "____",
+          " __",
+          " Paris",
+          "________",
+          "_____",
+          "___",
+          "____________",
+          "__",
+          "Paris"
+        ],
+        "call": "2/10 top tokens look contentful; 8/10 generic.",
+        "flag": "generic",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "fluent_logit_lens": {
+        "setting": "on",
+        "n_contentful_top10": 2,
+        "n_generic_top10": 8,
+        "kinds_top10": [
+          "punct",
+          "punct",
+          "content",
+          "punct",
+          "punct",
+          "punct",
+          "content",
+          "punct",
+          "punct",
+          "punct"
+        ],
+        "tokens_top10": [
+          " _______,",
+          " ___",
+          "Paris",
+          "________",
+          " __________________",
+          "____",
+          " capitale",
+          "____________",
+          "________________",
+          "___"
+        ],
+        "call": "2/10 top tokens look contentful; 8/10 generic.",
+        "flag": "generic",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "prompt": "The capital of France is",
+      "n_tokens": 5,
+      "last_token": " is",
+      "empty_fallback": null
+    },
+    {
+      "name": "largest_planet",
+      "dist": "on",
+      "source": "last_token_residual",
+      "layer": 23,
+      "rms": 0.5364556312561035,
+      "l2": 27.142759323120117,
+      "jlens_top10": [
+        " __",
+        "____",
+        "_____",
+        "____________",
+        "________",
+        " Jupiter",
+        " ___",
+        " planets",
+        "___",
+        " __________________"
+      ],
+      "logit_lens_top10": [
+        " _______,",
+        "太阳系",
+        " sanks",
+        " uranus",
+        " Inizi",
+        "ยักษ์",
+        " Pluto",
+        "hosts",
+        "wana",
+        " ................"
+      ],
+      "jlens": [
+        {
+          "token_id": 1259,
+          "token": " __",
+          "logit": 11.7109375
+        },
+        {
+          "token_id": 2062,
+          "token": "____",
+          "logit": 11.4921875
+        },
+        {
+          "token_id": 77740,
+          "token": "_____",
+          "logit": 11.3203125
+        },
+        {
+          "token_id": 40015,
+          "token": "____________",
+          "logit": 11.3125
+        },
+        {
+          "token_id": 3846,
+          "token": "________",
+          "logit": 10.84375
+        },
+        {
+          "token_id": 48017,
+          "token": " Jupiter",
+          "logit": 10.84375
+        },
+        {
+          "token_id": 7201,
+          "token": " ___",
+          "logit": 10.640625
+        },
+        {
+          "token_id": 31784,
+          "token": " planets",
+          "logit": 10.40625
+        },
+        {
+          "token_id": 5785,
+          "token": "___",
+          "logit": 10.3203125
+        },
+        {
+          "token_id": 42390,
+          "token": " __________________",
+          "logit": 10.3203125
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 54643,
+          "token": " _______,",
+          "logit": 14.3125
+        },
+        {
+          "token_id": 145551,
+          "token": "太阳系",
+          "logit": 12.5
+        },
+        {
+          "token_id": 224486,
+          "token": " sanks",
+          "logit": 12.0703125
+        },
+        {
+          "token_id": 91942,
+          "token": " uranus",
+          "logit": 11.75
+        },
+        {
+          "token_id": 237708,
+          "token": " Inizi",
+          "logit": 11.734375
+        },
+        {
+          "token_id": 242760,
+          "token": "ยักษ์",
+          "logit": 11.5625
+        },
+        {
+          "token_id": 74926,
+          "token": " Pluto",
+          "logit": 11.515625
+        },
+        {
+          "token_id": 43210,
+          "token": "hosts",
+          "logit": 11.5078125
+        },
+        {
+          "token_id": 213951,
+          "token": "wana",
+          "logit": 11.3359375
+        },
+        {
+          "token_id": 85857,
+          "token": " ................",
+          "logit": 11.28125
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 0,
+        "overlap_tokens": [],
+        "jaccard": 0.0
+      },
+      "logit_cosine": 0.19607821106910706,
+      "fluent_jlens": {
+        "setting": "on",
+        "n_contentful_top10": 2,
+        "n_generic_top10": 8,
+        "kinds_top10": [
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "content",
+          "punct",
+          "content",
+          "punct",
+          "punct"
+        ],
+        "tokens_top10": [
+          " __",
+          "____",
+          "_____",
+          "____________",
+          "________",
+          " Jupiter",
+          " ___",
+          " planets",
+          "___",
+          " __________________"
+        ],
+        "call": "2/10 top tokens look contentful; 8/10 generic.",
+        "flag": "generic",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "fluent_logit_lens": {
+        "setting": "on",
+        "n_contentful_top10": 8,
+        "n_generic_top10": 2,
+        "kinds_top10": [
+          "punct",
+          "cjk",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "punct"
+        ],
+        "tokens_top10": [
+          " _______,",
+          "太阳系",
+          " sanks",
+          " uranus",
+          " Inizi",
+          "ยักษ์",
+          " Pluto",
+          "hosts",
+          "wana",
+          " ................"
+        ],
+        "call": "8/10 top tokens look contentful; 2/10 generic.",
+        "flag": "content",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "prompt": "The largest planet in the solar system is",
+      "n_tokens": 8,
+      "last_token": " is",
+      "empty_fallback": null
+    },
+    {
+      "name": "two_plus_two",
+      "dist": "on",
+      "source": "last_token_residual",
+      "layer": 23,
+      "rms": 0.4398195445537567,
+      "l2": 22.253307342529297,
+      "jlens_top10": [
+        " ?",
+        "?",
+        "？",
+        "?\\",
+        "=?",
+        ")?",
+        "؟",
+        "()?",
+        " ___",
+        " $?"
+      ],
+      "logit_lens_top10": [
+        " ?**",
+        " ?\",",
+        " ?',",
+        "?\\",
+        "uttur",
+        " ؟",
+        "=?\",",
+        "?\",",
+        "()?",
+        " ?"
+      ],
+      "jlens": [
+        {
+          "token_id": 907,
+          "token": " ?",
+          "logit": 14.015625
+        },
+        {
+          "token_id": 30,
+          "token": "?",
+          "logit": 11.8828125
+        },
+        {
+          "token_id": 10992,
+          "token": "？",
+          "logit": 10.0390625
+        },
+        {
+          "token_id": 31541,
+          "token": "?\\",
+          "logit": 9.765625
+        },
+        {
+          "token_id": 19279,
+          "token": "=?",
+          "logit": 9.7265625
+        },
+        {
+          "token_id": 11504,
+          "token": ")?",
+          "logit": 8.5
+        },
+        {
+          "token_id": 152033,
+          "token": "؟",
+          "logit": 8.390625
+        },
+        {
+          "token_id": 90118,
+          "token": "()?",
+          "logit": 8.3515625
+        },
+        {
+          "token_id": 7201,
+          "token": " ___",
+          "logit": 8.3125
+        },
+        {
+          "token_id": 48376,
+          "token": " $?",
+          "logit": 7.96875
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 176218,
+          "token": " ?**",
+          "logit": 12.8125
+        },
+        {
+          "token_id": 40907,
+          "token": " ?\",",
+          "logit": 11.2734375
+        },
+        {
+          "token_id": 56005,
+          "token": " ?',",
+          "logit": 11.1796875
+        },
+        {
+          "token_id": 31541,
+          "token": "?\\",
+          "logit": 10.640625
+        },
+        {
+          "token_id": 158288,
+          "token": "uttur",
+          "logit": 10.625
+        },
+        {
+          "token_id": 173888,
+          "token": " ؟",
+          "logit": 10.59375
+        },
+        {
+          "token_id": 84845,
+          "token": "=?\",",
+          "logit": 10.140625
+        },
+        {
+          "token_id": 29993,
+          "token": "?\",",
+          "logit": 10.0703125
+        },
+        {
+          "token_id": 90118,
+          "token": "()?",
+          "logit": 10.0390625
+        },
+        {
+          "token_id": 907,
+          "token": " ?",
+          "logit": 10.0234375
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 3,
+        "overlap_tokens": [
+          " ?",
+          "?\\",
+          "()?"
+        ],
+        "jaccard": 0.17647058823529413
+      },
+      "logit_cosine": 0.1299544721841812,
+      "fluent_jlens": {
+        "setting": "on",
+        "n_contentful_top10": 0,
+        "n_generic_top10": 10,
+        "kinds_top10": [
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct"
+        ],
+        "tokens_top10": [
+          " ?",
+          "?",
+          "？",
+          "?\\",
+          "=?",
+          ")?",
+          "؟",
+          "()?",
+          " ___",
+          " $?"
+        ],
+        "call": "0/10 top tokens look contentful; 10/10 generic.",
+        "flag": "generic",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "fluent_logit_lens": {
+        "setting": "on",
+        "n_contentful_top10": 1,
+        "n_generic_top10": 9,
+        "kinds_top10": [
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "content",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct"
+        ],
+        "tokens_top10": [
+          " ?**",
+          " ?\",",
+          " ?',",
+          "?\\",
+          "uttur",
+          " ؟",
+          "=?\",",
+          "?\",",
+          "()?",
+          " ?"
+        ],
+        "call": "1/10 top tokens look contentful; 9/10 generic.",
+        "flag": "generic",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "prompt": "2 + 2 =",
+      "n_tokens": 5,
+      "last_token": " =",
+      "empty_fallback": null
+    },
+    {
+      "name": "gold_symbol",
+      "dist": "on",
+      "source": "last_token_residual",
+      "layer": 23,
+      "rms": 0.5351345539093018,
+      "l2": 27.075916290283203,
+      "jlens_top10": [
+        " gold",
+        " ___",
+        "________",
+        "____",
+        "gold",
+        " __",
+        "_____",
+        " Gold",
+        "____________",
+        "缩写"
+      ],
+      "logit_lens_top10": [
+        ".gold",
+        "gold",
+        "金",
+        "金は",
+        "金的",
+        " gold",
+        "金が",
+        "含金量",
+        "金を",
+        "金色的"
+      ],
+      "jlens": [
+        {
+          "token_id": 6414,
+          "token": " gold",
+          "logit": 11.6640625
+        },
+        {
+          "token_id": 7201,
+          "token": " ___",
+          "logit": 10.4140625
+        },
+        {
+          "token_id": 3846,
+          "token": "________",
+          "logit": 10.234375
+        },
+        {
+          "token_id": 2062,
+          "token": "____",
+          "logit": 9.9765625
+        },
+        {
+          "token_id": 33392,
+          "token": "gold",
+          "logit": 9.9140625
+        },
+        {
+          "token_id": 1259,
+          "token": " __",
+          "logit": 9.6484375
+        },
+        {
+          "token_id": 77740,
+          "token": "_____",
+          "logit": 9.625
+        },
+        {
+          "token_id": 7186,
+          "token": " Gold",
+          "logit": 9.5625
+        },
+        {
+          "token_id": 40015,
+          "token": "____________",
+          "logit": 9.4609375
+        },
+        {
+          "token_id": 124928,
+          "token": "缩写",
+          "logit": 9.2890625
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 89760,
+          "token": ".gold",
+          "logit": 12.734375
+        },
+        {
+          "token_id": 33392,
+          "token": "gold",
+          "logit": 12.234375
+        },
+        {
+          "token_id": 96012,
+          "token": "金",
+          "logit": 11.9609375
+        },
+        {
+          "token_id": 223002,
+          "token": "金は",
+          "logit": 11.640625
+        },
+        {
+          "token_id": 112265,
+          "token": "金的",
+          "logit": 11.59375
+        },
+        {
+          "token_id": 6414,
+          "token": " gold",
+          "logit": 11.421875
+        },
+        {
+          "token_id": 222955,
+          "token": "金が",
+          "logit": 11.171875
+        },
+        {
+          "token_id": 128824,
+          "token": "含金量",
+          "logit": 11.109375
+        },
+        {
+          "token_id": 161494,
+          "token": "金を",
+          "logit": 11.046875
+        },
+        {
+          "token_id": 118848,
+          "token": "金色的",
+          "logit": 10.9453125
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 2,
+        "overlap_tokens": [
+          " gold",
+          "gold"
+        ],
+        "jaccard": 0.1111111111111111
+      },
+      "logit_cosine": 0.37878847122192383,
+      "fluent_jlens": {
+        "setting": "on",
+        "n_contentful_top10": 4,
+        "n_generic_top10": 6,
+        "kinds_top10": [
+          "content",
+          "punct",
+          "punct",
+          "punct",
+          "content",
+          "punct",
+          "punct",
+          "content",
+          "punct",
+          "cjk"
+        ],
+        "tokens_top10": [
+          " gold",
+          " ___",
+          "________",
+          "____",
+          "gold",
+          " __",
+          "_____",
+          " Gold",
+          "____________",
+          "缩写"
+        ],
+        "call": "4/10 top tokens look contentful; 6/10 generic.",
+        "flag": "generic",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "fluent_logit_lens": {
+        "setting": "on",
+        "n_contentful_top10": 10,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "content",
+          "content",
+          "cjk",
+          "cjk",
+          "cjk",
+          "content",
+          "cjk",
+          "cjk",
+          "cjk",
+          "cjk"
+        ],
+        "tokens_top10": [
+          ".gold",
+          "gold",
+          "金",
+          "金は",
+          "金的",
+          " gold",
+          "金が",
+          "含金量",
+          "金を",
+          "金色的"
+        ],
+        "call": "10/10 top tokens look contentful; 0/10 generic.",
+        "flag": "content",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "prompt": "The chemical symbol for gold is",
+      "n_tokens": 6,
+      "last_token": " is",
+      "empty_fallback": null
+    },
+    {
+      "name": "first_president",
+      "dist": "on",
+      "source": "last_token_residual",
+      "layer": 23,
+      "rms": 0.5178016424179077,
+      "l2": 26.198932647705078,
+      "jlens_top10": [
+        " ___",
+        " ____",
+        " __",
+        "_____",
+        "____",
+        " __________________",
+        "________",
+        " _____",
+        " ______",
+        "____________"
+      ],
+      "logit_lens_top10": [
+        " _______,",
+        "…]",
+        " ..........",
+        " __________________",
+        "born",
+        " ____",
+        "...........",
+        " ................",
+        "…**",
+        "…but"
+      ],
+      "jlens": [
+        {
+          "token_id": 7201,
+          "token": " ___",
+          "logit": 12.5078125
+        },
+        {
+          "token_id": 29739,
+          "token": " ____",
+          "logit": 12.3984375
+        },
+        {
+          "token_id": 1259,
+          "token": " __",
+          "logit": 12.3828125
+        },
+        {
+          "token_id": 77740,
+          "token": "_____",
+          "logit": 12.1875
+        },
+        {
+          "token_id": 2062,
+          "token": "____",
+          "logit": 12.140625
+        },
+        {
+          "token_id": 42390,
+          "token": " __________________",
+          "logit": 11.7421875
+        },
+        {
+          "token_id": 3846,
+          "token": "________",
+          "logit": 11.7109375
+        },
+        {
+          "token_id": 63668,
+          "token": " _____",
+          "logit": 11.5625
+        },
+        {
+          "token_id": 31586,
+          "token": " ______",
+          "logit": 11.2421875
+        },
+        {
+          "token_id": 40015,
+          "token": "____________",
+          "logit": 10.96875
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 54643,
+          "token": " _______,",
+          "logit": 15.8828125
+        },
+        {
+          "token_id": 170400,
+          "token": "…]",
+          "logit": 14.3828125
+        },
+        {
+          "token_id": 88399,
+          "token": " ..........",
+          "logit": 12.234375
+        },
+        {
+          "token_id": 42390,
+          "token": " __________________",
+          "logit": 12.203125
+        },
+        {
+          "token_id": 15526,
+          "token": "born",
+          "logit": 11.6640625
+        },
+        {
+          "token_id": 29739,
+          "token": " ____",
+          "logit": 11.4296875
+        },
+        {
+          "token_id": 234511,
+          "token": "...........",
+          "logit": 11.2265625
+        },
+        {
+          "token_id": 85857,
+          "token": " ................",
+          "logit": 11.15625
+        },
+        {
+          "token_id": 193691,
+          "token": "…**",
+          "logit": 11.1015625
+        },
+        {
+          "token_id": 79815,
+          "token": "…but",
+          "logit": 10.96875
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 2,
+        "overlap_tokens": [
+          " ____",
+          " __________________"
+        ],
+        "jaccard": 0.1111111111111111
+      },
+      "logit_cosine": 0.22438649833202362,
+      "fluent_jlens": {
+        "setting": "on",
+        "n_contentful_top10": 0,
+        "n_generic_top10": 10,
+        "kinds_top10": [
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "punct"
+        ],
+        "tokens_top10": [
+          " ___",
+          " ____",
+          " __",
+          "_____",
+          "____",
+          " __________________",
+          "________",
+          " _____",
+          " ______",
+          "____________"
+        ],
+        "call": "0/10 top tokens look contentful; 10/10 generic.",
+        "flag": "generic",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "fluent_logit_lens": {
+        "setting": "on",
+        "n_contentful_top10": 2,
+        "n_generic_top10": 8,
+        "kinds_top10": [
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "content",
+          "punct",
+          "punct",
+          "punct",
+          "punct",
+          "content"
+        ],
+        "tokens_top10": [
+          " _______,",
+          "…]",
+          " ..........",
+          " __________________",
+          "born",
+          " ____",
+          "...........",
+          " ................",
+          "…**",
+          "…but"
+        ],
+        "call": "2/10 top tokens look contentful; 8/10 generic.",
+        "flag": "generic",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "prompt": "The first president of the United States was",
+      "n_tokens": 8,
+      "last_token": " was",
+      "empty_fallback": null
+    }
+  ],
+  "off_distribution": [
+    {
+      "name": "empty",
+      "dist": "off",
+      "source": "last_token_residual",
+      "layer": 23,
+      "rms": 0.27754485607147217,
+      "l2": 14.042784690856934,
+      "jlens_top10": [
+        "_into",
+        "想法",
+        "政权",
+        "低价",
+        "话题",
+        "赞同",
+        "室一厅",
+        "觉",
+        "ách",
+        "护"
+      ],
+      "logit_lens_top10": [
+        " sín",
+        "精英",
+        "行之",
+        " Journalism",
+        "ostr",
+        "ENTIC",
+        "inian",
+        "avn",
+        "andi",
+        "andin"
+      ],
+      "jlens": [
+        {
+          "token_id": 43997,
+          "token": "_into",
+          "logit": 5.6640625
+        },
+        {
+          "token_id": 101731,
+          "token": "想法",
+          "logit": 5.375
+        },
+        {
+          "token_id": 117473,
+          "token": "政权",
+          "logit": 5.30859375
+        },
+        {
+          "token_id": 111076,
+          "token": "低价",
+          "logit": 5.10546875
+        },
+        {
+          "token_id": 104095,
+          "token": "话题",
+          "logit": 5.08203125
+        },
+        {
+          "token_id": 99678,
+          "token": "赞同",
+          "logit": 5.0625
+        },
+        {
+          "token_id": 134152,
+          "token": "室一厅",
+          "logit": 5.01953125
+        },
+        {
+          "token_id": 96593,
+          "token": "觉",
+          "logit": 5.01171875
+        },
+        {
+          "token_id": 51279,
+          "token": "ách",
+          "logit": 4.98828125
+        },
+        {
+          "token_id": 96368,
+          "token": "护",
+          "logit": 4.98046875
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 180841,
+          "token": " sín",
+          "logit": 8.9296875
+        },
+        {
+          "token_id": 109240,
+          "token": "精英",
+          "logit": 8.09375
+        },
+        {
+          "token_id": 106915,
+          "token": "行之",
+          "logit": 7.7109375
+        },
+        {
+          "token_id": 66234,
+          "token": " Journalism",
+          "logit": 7.47265625
+        },
+        {
+          "token_id": 153217,
+          "token": "ostr",
+          "logit": 7.46484375
+        },
+        {
+          "token_id": 90093,
+          "token": "ENTIC",
+          "logit": 7.19921875
+        },
+        {
+          "token_id": 245457,
+          "token": "inian",
+          "logit": 7.15625
+        },
+        {
+          "token_id": 29598,
+          "token": "avn",
+          "logit": 7.12109375
+        },
+        {
+          "token_id": 62392,
+          "token": "andi",
+          "logit": 7.0546875
+        },
+        {
+          "token_id": 48898,
+          "token": "andin",
+          "logit": 7.0078125
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 0,
+        "overlap_tokens": [],
+        "jaccard": 0.0
+      },
+      "logit_cosine": 0.7002861499786377,
+      "fluent_jlens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 10,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "content",
+          "cjk",
+          "cjk",
+          "cjk",
+          "cjk",
+          "cjk",
+          "cjk",
+          "cjk",
+          "content",
+          "cjk"
+        ],
+        "tokens_top10": [
+          "_into",
+          "想法",
+          "政权",
+          "低价",
+          "话题",
+          "赞同",
+          "室一厅",
+          "觉",
+          "ách",
+          "护"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "fluent_confabulation",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 1
+      },
+      "fluent_logit_lens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 10,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "content",
+          "cjk",
+          "cjk",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content"
+        ],
+        "tokens_top10": [
+          " sín",
+          "精英",
+          "行之",
+          " Journalism",
+          "ostr",
+          "ENTIC",
+          "inian",
+          "avn",
+          "andi",
+          "andin"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "fluent_confabulation",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 2
+      },
+      "prompt": "",
+      "n_tokens": 1,
+      "last_token": "<|endoftext|>",
+      "empty_fallback": "single_token_id=248044"
+    },
+    {
+      "name": "hello",
+      "dist": "off",
+      "source": "last_token_residual",
+      "layer": 23,
+      "rms": 0.6819586157798767,
+      "l2": 34.504695892333984,
+      "jlens_top10": [
+        " I",
+        "iv",
+        "uz",
+        "rit",
+        "^{",
+        "^",
+        " Please",
+        " In",
+        "适",
+        "+"
+      ],
+      "logit_lens_top10": [
+        "uz",
+        "义",
+        "zn",
+        "ounds",
+        " Aún",
+        " bisschen",
+        "ug",
+        " Acomp",
+        "ucc",
+        "很清楚"
+      ],
+      "jlens": [
+        {
+          "token_id": 353,
+          "token": " I",
+          "logit": 6.21484375
+        },
+        {
+          "token_id": 340,
+          "token": "iv",
+          "logit": 5.41015625
+        },
+        {
+          "token_id": 5032,
+          "token": "uz",
+          "logit": 5.12890625
+        },
+        {
+          "token_id": 971,
+          "token": "rit",
+          "logit": 4.9765625
+        },
+        {
+          "token_id": 46227,
+          "token": "^{",
+          "logit": 4.93359375
+        },
+        {
+          "token_id": 61,
+          "token": "^",
+          "logit": 4.78125
+        },
+        {
+          "token_id": 5044,
+          "token": " Please",
+          "logit": 4.78125
+        },
+        {
+          "token_id": 733,
+          "token": " In",
+          "logit": 4.67578125
+        },
+        {
+          "token_id": 96515,
+          "token": "适",
+          "logit": 4.6328125
+        },
+        {
+          "token_id": 10,
+          "token": "+",
+          "logit": 4.62890625
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 5032,
+          "token": "uz",
+          "logit": 8.109375
+        },
+        {
+          "token_id": 96359,
+          "token": "义",
+          "logit": 7.49609375
+        },
+        {
+          "token_id": 19691,
+          "token": "zn",
+          "logit": 7.44921875
+        },
+        {
+          "token_id": 2995,
+          "token": "ounds",
+          "logit": 7.015625
+        },
+        {
+          "token_id": 244162,
+          "token": " Aún",
+          "logit": 6.9453125
+        },
+        {
+          "token_id": 196296,
+          "token": " bisschen",
+          "logit": 6.82421875
+        },
+        {
+          "token_id": 743,
+          "token": "ug",
+          "logit": 6.80859375
+        },
+        {
+          "token_id": 223307,
+          "token": " Acomp",
+          "logit": 6.80078125
+        },
+        {
+          "token_id": 14151,
+          "token": "ucc",
+          "logit": 6.77734375
+        },
+        {
+          "token_id": 125578,
+          "token": "很清楚",
+          "logit": 6.7578125
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 1,
+        "overlap_tokens": [
+          "uz"
+        ],
+        "jaccard": 0.05263157894736842
+      },
+      "logit_cosine": 0.6424127817153931,
+      "fluent_jlens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 5,
+        "n_generic_top10": 5,
+        "kinds_top10": [
+          "function",
+          "content",
+          "content",
+          "content",
+          "punct",
+          "punct",
+          "content",
+          "function",
+          "cjk",
+          "punct"
+        ],
+        "tokens_top10": [
+          " I",
+          "iv",
+          "uz",
+          "rit",
+          "^{",
+          "^",
+          " Please",
+          " In",
+          "适",
+          "+"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "fluent_confabulation",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 3
+      },
+      "fluent_logit_lens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 10,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "content",
+          "cjk",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "cjk"
+        ],
+        "tokens_top10": [
+          "uz",
+          "义",
+          "zn",
+          "ounds",
+          " Aún",
+          " bisschen",
+          "ug",
+          " Acomp",
+          "ucc",
+          "很清楚"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "junk_content",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 5
+      },
+      "prompt": "Hello.",
+      "n_tokens": 2,
+      "last_token": ".",
+      "empty_fallback": null
+    },
+    {
+      "name": "period",
+      "dist": "off",
+      "source": "last_token_residual",
+      "layer": 23,
+      "rms": 0.46328532695770264,
+      "l2": 23.44059944152832,
+      "jlens_top10": [
+        " ",
+        "   ",
+        "     ",
+        " |",
+        "+",
+        "4",
+        "5",
+        "2",
+        "]",
+        "0"
+      ],
+      "logit_lens_top10": [
+        "uz",
+        "4",
+        "_handler",
+        "zn",
+        "5",
+        "开",
+        "义",
+        "8",
+        "1",
+        "0"
+      ],
+      "jlens": [
+        {
+          "token_id": 220,
+          "token": " ",
+          "logit": 6.390625
+        },
+        {
+          "token_id": 262,
+          "token": "   ",
+          "logit": 5.28125
+        },
+        {
+          "token_id": 406,
+          "token": "     ",
+          "logit": 5.2421875
+        },
+        {
+          "token_id": 735,
+          "token": " |",
+          "logit": 5.15625
+        },
+        {
+          "token_id": 10,
+          "token": "+",
+          "logit": 5.14453125
+        },
+        {
+          "token_id": 19,
+          "token": "4",
+          "logit": 5.02734375
+        },
+        {
+          "token_id": 20,
+          "token": "5",
+          "logit": 4.93359375
+        },
+        {
+          "token_id": 17,
+          "token": "2",
+          "logit": 4.89453125
+        },
+        {
+          "token_id": 60,
+          "token": "]",
+          "logit": 4.74609375
+        },
+        {
+          "token_id": 15,
+          "token": "0",
+          "logit": 4.68359375
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 5032,
+          "token": "uz",
+          "logit": 7.14453125
+        },
+        {
+          "token_id": 19,
+          "token": "4",
+          "logit": 7.03125
+        },
+        {
+          "token_id": 9880,
+          "token": "_handler",
+          "logit": 7.0078125
+        },
+        {
+          "token_id": 19691,
+          "token": "zn",
+          "logit": 6.828125
+        },
+        {
+          "token_id": 20,
+          "token": "5",
+          "logit": 6.66796875
+        },
+        {
+          "token_id": 95915,
+          "token": "开",
+          "logit": 6.66015625
+        },
+        {
+          "token_id": 96359,
+          "token": "义",
+          "logit": 6.66015625
+        },
+        {
+          "token_id": 23,
+          "token": "8",
+          "logit": 6.6328125
+        },
+        {
+          "token_id": 16,
+          "token": "1",
+          "logit": 6.5
+        },
+        {
+          "token_id": 15,
+          "token": "0",
+          "logit": 6.47265625
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 3,
+        "overlap_tokens": [
+          "4",
+          "5",
+          "0"
+        ],
+        "jaccard": 0.17647058823529413
+      },
+      "logit_cosine": 0.8114282488822937,
+      "fluent_jlens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 0,
+        "n_generic_top10": 6,
+        "kinds_top10": [
+          "whitespace",
+          "whitespace",
+          "whitespace",
+          "punct",
+          "punct",
+          "other",
+          "other",
+          "other",
+          "punct",
+          "other"
+        ],
+        "tokens_top10": [
+          " ",
+          "   ",
+          "     ",
+          " |",
+          "+",
+          "4",
+          "5",
+          "2",
+          "]",
+          "0"
+        ],
+        "call": "Top tokens look generic (punct/function); not a strong specific-claim dump.",
+        "flag": "generic",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "fluent_logit_lens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 5,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "content",
+          "other",
+          "content",
+          "content",
+          "other",
+          "cjk",
+          "cjk",
+          "other",
+          "other",
+          "other"
+        ],
+        "tokens_top10": [
+          "uz",
+          "4",
+          "_handler",
+          "zn",
+          "5",
+          "开",
+          "义",
+          "8",
+          "1",
+          "0"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "fluent_confabulation",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 2
+      },
+      "prompt": ".",
+      "n_tokens": 1,
+      "last_token": ".",
+      "empty_fallback": null
+    },
+    {
+      "name": "gaussian_matched_rms",
+      "dist": "off",
+      "source": "isotropic_gaussian",
+      "layer": 23,
+      "rms": 0.5124930143356323,
+      "l2": 25.930326461791992,
+      "jlens_top10": [
+        "较好地",
+        "尼迪",
+        "-scal",
+        " Closed",
+        " Swe",
+        " Scal",
+        "全家人",
+        "calar",
+        "_Un",
+        " Uns"
+      ],
+      "logit_lens_top10": [
+        "较好地",
+        "hn",
+        "无际",
+        "fu",
+        "eneg",
+        " denomin",
+        " bì",
+        " Swe",
+        "ură",
+        "emasan"
+      ],
+      "jlens": [
+        {
+          "token_id": 132437,
+          "token": "较好地",
+          "logit": 8.9453125
+        },
+        {
+          "token_id": 133174,
+          "token": "尼迪",
+          "logit": 8.6640625
+        },
+        {
+          "token_id": 59802,
+          "token": "-scal",
+          "logit": 8.625
+        },
+        {
+          "token_id": 43197,
+          "token": " Closed",
+          "logit": 8.375
+        },
+        {
+          "token_id": 35028,
+          "token": " Swe",
+          "logit": 8.25
+        },
+        {
+          "token_id": 66505,
+          "token": " Scal",
+          "logit": 8.125
+        },
+        {
+          "token_id": 131216,
+          "token": "全家人",
+          "logit": 8.015625
+        },
+        {
+          "token_id": 57152,
+          "token": "calar",
+          "logit": 7.9296875
+        },
+        {
+          "token_id": 39343,
+          "token": "_Un",
+          "logit": 7.890625
+        },
+        {
+          "token_id": 58986,
+          "token": " Uns",
+          "logit": 7.890625
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 132437,
+          "token": "较好地",
+          "logit": 9.2890625
+        },
+        {
+          "token_id": 23379,
+          "token": "hn",
+          "logit": 8.9453125
+        },
+        {
+          "token_id": 127235,
+          "token": "无际",
+          "logit": 8.5
+        },
+        {
+          "token_id": 31542,
+          "token": "fu",
+          "logit": 8.3046875
+        },
+        {
+          "token_id": 74879,
+          "token": "eneg",
+          "logit": 8.109375
+        },
+        {
+          "token_id": 59103,
+          "token": " denomin",
+          "logit": 8.0234375
+        },
+        {
+          "token_id": 177344,
+          "token": " bì",
+          "logit": 7.546875
+        },
+        {
+          "token_id": 35028,
+          "token": " Swe",
+          "logit": 7.51171875
+        },
+        {
+          "token_id": 204458,
+          "token": "ură",
+          "logit": 7.48046875
+        },
+        {
+          "token_id": 158562,
+          "token": "emasan",
+          "logit": 7.4453125
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 2,
+        "overlap_tokens": [
+          "较好地",
+          " Swe"
+        ],
+        "jaccard": 0.1111111111111111
+      },
+      "logit_cosine": 0.8515906929969788,
+      "fluent_jlens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 10,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "cjk",
+          "cjk",
+          "content",
+          "content",
+          "content",
+          "content",
+          "cjk",
+          "content",
+          "content",
+          "content"
+        ],
+        "tokens_top10": [
+          "较好地",
+          "尼迪",
+          "-scal",
+          " Closed",
+          " Swe",
+          " Scal",
+          "全家人",
+          "calar",
+          "_Un",
+          " Uns"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "fluent_confabulation",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 3
+      },
+      "fluent_logit_lens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 10,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "cjk",
+          "content",
+          "cjk",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content",
+          "content"
+        ],
+        "tokens_top10": [
+          "较好地",
+          "hn",
+          "无际",
+          "fu",
+          "eneg",
+          " denomin",
+          " bì",
+          " Swe",
+          "ură",
+          "emasan"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "junk_content",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 5
+      },
+      "matched_to": "france_capital",
+      "ref_rms": 0.5124930143356323,
+      "ref_l2": 25.930335998535156
+    },
+    {
+      "name": "random_unit_scaled",
+      "dist": "off",
+      "source": "random_unit_scaled_to_residual_norm",
+      "layer": 23,
+      "rms": 0.512493371963501,
+      "l2": 25.93033790588379,
+      "jlens_top10": [
+        "grunt",
+        "inand",
+        " bindings",
+        " standalone",
+        "呱",
+        "enga",
+        " stood",
+        " stand",
+        " boarded",
+        "亀"
+      ],
+      "logit_lens_top10": [
+        "纳",
+        "夷",
+        " continued",
+        "照",
+        "ze",
+        "grunt",
+        "散",
+        " bindings",
+        "ak",
+        "ientos"
+      ],
+      "jlens": [
+        {
+          "token_id": 59158,
+          "token": "grunt",
+          "logit": 10.6640625
+        },
+        {
+          "token_id": 73143,
+          "token": "inand",
+          "logit": 8.8046875
+        },
+        {
+          "token_id": 34519,
+          "token": " bindings",
+          "logit": 8.6796875
+        },
+        {
+          "token_id": 41954,
+          "token": " standalone",
+          "logit": 8.453125
+        },
+        {
+          "token_id": 101581,
+          "token": "呱",
+          "logit": 8.3203125
+        },
+        {
+          "token_id": 72037,
+          "token": "enga",
+          "logit": 8.296875
+        },
+        {
+          "token_id": 14217,
+          "token": " stood",
+          "logit": 8.2890625
+        },
+        {
+          "token_id": 2418,
+          "token": " stand",
+          "logit": 8.2734375
+        },
+        {
+          "token_id": 80592,
+          "token": " boarded",
+          "logit": 8.2109375
+        },
+        {
+          "token_id": 246982,
+          "token": "亀",
+          "logit": 8.0859375
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 96803,
+          "token": "纳",
+          "logit": 9.2578125
+        },
+        {
+          "token_id": 100434,
+          "token": "夷",
+          "logit": 8.921875
+        },
+        {
+          "token_id": 8308,
+          "token": " continued",
+          "logit": 8.53125
+        },
+        {
+          "token_id": 96565,
+          "token": "照",
+          "logit": 8.390625
+        },
+        {
+          "token_id": 2891,
+          "token": "ze",
+          "logit": 8.3046875
+        },
+        {
+          "token_id": 59158,
+          "token": "grunt",
+          "logit": 8.171875
+        },
+        {
+          "token_id": 97058,
+          "token": "散",
+          "logit": 8.1015625
+        },
+        {
+          "token_id": 34519,
+          "token": " bindings",
+          "logit": 8.09375
+        },
+        {
+          "token_id": 570,
+          "token": "ak",
+          "logit": 8.03125
+        },
+        {
+          "token_id": 30908,
+          "token": "ientos",
+          "logit": 7.98828125
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 2,
+        "overlap_tokens": [
+          "grunt",
+          " bindings"
+        ],
+        "jaccard": 0.1111111111111111
+      },
+      "logit_cosine": 0.7991352081298828,
+      "fluent_jlens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 10,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "content",
+          "content",
+          "content",
+          "content",
+          "cjk",
+          "content",
+          "content",
+          "content",
+          "content",
+          "cjk"
+        ],
+        "tokens_top10": [
+          "grunt",
+          "inand",
+          " bindings",
+          " standalone",
+          "呱",
+          "enga",
+          " stood",
+          " stand",
+          " boarded",
+          "亀"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "fluent_confabulation",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "fluent_logit_lens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 10,
+        "n_generic_top10": 0,
+        "kinds_top10": [
+          "cjk",
+          "cjk",
+          "content",
+          "cjk",
+          "content",
+          "content",
+          "cjk",
+          "content",
+          "content",
+          "content"
+        ],
+        "tokens_top10": [
+          "纳",
+          "夷",
+          " continued",
+          "照",
+          "ze",
+          "grunt",
+          "散",
+          " bindings",
+          "ak",
+          "ientos"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "fluent_confabulation",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 2
+      },
+      "matched_to": "france_capital",
+      "ref_l2": 25.930335998535156
+    },
+    {
+      "name": "v_leak",
+      "dist": "off",
+      "source": "results/direction.pt:v",
+      "layer": 23,
+      "rms": 0.019764242693781853,
+      "l2": 1.0000005960464478,
+      "jlens_top10": [
+        "庞大",
+        "亿元以上",
+        "万以上",
+        " huge",
+        " HUGE",
+        "庞大的",
+        " enormous",
+        "超大",
+        " >(",
+        "米以上"
+      ],
+      "logit_lens_top10": [
+        "深水",
+        "儿",
+        "nü",
+        " >(",
+        "enang",
+        "龐",
+        " potriv",
+        "hashtags",
+        " عب",
+        "兒"
+      ],
+      "jlens": [
+        {
+          "token_id": 115672,
+          "token": "庞大",
+          "logit": 10.7265625
+        },
+        {
+          "token_id": 146961,
+          "token": "亿元以上",
+          "logit": 10.5625
+        },
+        {
+          "token_id": 128035,
+          "token": "万以上",
+          "logit": 10.4296875
+        },
+        {
+          "token_id": 6552,
+          "token": " huge",
+          "logit": 10.125
+        },
+        {
+          "token_id": 70187,
+          "token": " HUGE",
+          "logit": 10.078125
+        },
+        {
+          "token_id": 113567,
+          "token": "庞大的",
+          "logit": 9.71875
+        },
+        {
+          "token_id": 21701,
+          "token": " enormous",
+          "logit": 9.6171875
+        },
+        {
+          "token_id": 115670,
+          "token": "超大",
+          "logit": 9.3671875
+        },
+        {
+          "token_id": 35502,
+          "token": " >(",
+          "logit": 9.359375
+        },
+        {
+          "token_id": 137818,
+          "token": "米以上",
+          "logit": 9.3515625
+        }
+      ],
+      "logit_lens": [
+        {
+          "token_id": 132397,
+          "token": "深水",
+          "logit": 10.5078125
+        },
+        {
+          "token_id": 96408,
+          "token": "儿",
+          "logit": 9.8046875
+        },
+        {
+          "token_id": 240997,
+          "token": "nü",
+          "logit": 9.28125
+        },
+        {
+          "token_id": 35502,
+          "token": " >(",
+          "logit": 9.1640625
+        },
+        {
+          "token_id": 177634,
+          "token": "enang",
+          "logit": 9.0703125
+        },
+        {
+          "token_id": 108207,
+          "token": "龐",
+          "logit": 8.9921875
+        },
+        {
+          "token_id": 228410,
+          "token": " potriv",
+          "logit": 8.9921875
+        },
+        {
+          "token_id": 29224,
+          "token": "hashtags",
+          "logit": 8.9375
+        },
+        {
+          "token_id": 156423,
+          "token": " عب",
+          "logit": 8.8828125
+        },
+        {
+          "token_id": 98732,
+          "token": "兒",
+          "logit": 8.84375
+        }
+      ],
+      "overlap@10": {
+        "k": 10,
+        "n_overlap": 1,
+        "overlap_tokens": [
+          " >("
+        ],
+        "jaccard": 0.05263157894736842
+      },
+      "logit_cosine": 0.8690347671508789,
+      "fluent_jlens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 9,
+        "n_generic_top10": 1,
+        "kinds_top10": [
+          "cjk",
+          "cjk",
+          "cjk",
+          "content",
+          "content",
+          "cjk",
+          "content",
+          "cjk",
+          "punct",
+          "cjk"
+        ],
+        "tokens_top10": [
+          "庞大",
+          "亿元以上",
+          "万以上",
+          " huge",
+          " HUGE",
+          "庞大的",
+          " enormous",
+          "超大",
+          " >(",
+          "米以上"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "fluent_confabulation",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 0
+      },
+      "fluent_logit_lens": {
+        "setting": "emptyish",
+        "n_contentful_top10": 9,
+        "n_generic_top10": 1,
+        "kinds_top10": [
+          "cjk",
+          "cjk",
+          "content",
+          "punct",
+          "content",
+          "cjk",
+          "content",
+          "content",
+          "content",
+          "cjk"
+        ],
+        "tokens_top10": [
+          "深水",
+          "儿",
+          "nü",
+          " >(",
+          "enang",
+          "龐",
+          " potriv",
+          "hashtags",
+          " عب",
+          "兒"
+        ],
+        "call": "J-Lens/logit-lens still dumps contentful tokens on a prompt that should not contain a concept — treat as hallucination, not readout.",
+        "flag": "fluent_confabulation",
+        "n_special_top10": 0,
+        "n_short_fragment_top10": 2
+      }
+    }
+  ],
+  "paragraph": "J-Lens on Qwen3.5-4B layer 23 is a 2560×2560 linear Jacobian with no bias (cos(J,I)=0.858; layer 30 is exactly I), i.e. tuned-lens-class: learned map then RMSNorm+unembed, not a trained tuned lens and not a nonlinear decoder. On-distribution, mean overlap@10 vs logit-lens is 2.6/10 and mean logit-cosine is 0.234: they are not the same ranking. J-Lens is the more clustered next-token map (France: Paris among blanks, overlap 6/10; planet: Jupiter/planets among blanks; gold: gold/Gold/缩写), while logit-lens is broader/noisier (capitale; 太阳系/uranus/Pluto; 金). Neither reads '4' or 'Washington'. Off-distribution mean overlap@10 is 1.5/10; v_leak logit-cosine=0.869 but top-10 overlap only 1/10 — J-Lens 庞大/huge/enormous vs logit-lens junk (深水/儿/nü). Empty/Hello. still yield content words (想法/政权/低价; I/Please). So J-Lens is a denoised next-token map: more fluent than logit-lens, more willing to confabulate off-distribution, not a faithful concept detector.",
+  "do_not_claim_true_internals": true
+}

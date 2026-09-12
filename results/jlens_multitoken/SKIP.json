@@ -1,0 +1,30 @@
+{
+  "ran": false,
+  "reason": "32 GB unified memory (sysctl hw.memsize=34359738368). Qwen3.6-27B bf16 is ~54 GB; released template stacks are 8.63 GB and 8.99 GB. Combined load is not plausible on this machine, especially with another MPS 4B job possibly running. Did not download the 9 GB safetensors. Did not load 27B. Did not fake a run.",
+  "hw_memsize_bytes": 34359738368,
+  "hw_memsize_gb": 32.0,
+  "template_lens_released_only_for": "qwen3.6-27b",
+  "oracle_lens_released": false,
+  "tuned_lens_released": false,
+  "eval_json_in_zoo": false,
+  "sources_opened": [
+    "https://transformer-circuits.pub/2026/workspace/index.html",
+    "https://huggingface.co/camilablank/workspace-lenses/tree/main",
+    "https://huggingface.co/camilablank/workspace-lenses/tree/main/qwen3.6-27b/template-lens",
+    "https://huggingface.co/camilablank/workspace-lenses/raw/main/README.md",
+    "https://huggingface.co/camilablank/workspace-lenses/tree/main/qwen3.5-4b",
+    "https://huggingface.co/camilablank/workspace-lenses/tree/main/qwen3.6-27b",
+    "https://huggingface.co/camilablank/workspace-lenses/tree/main/qwen3.6-27b/j-lens",
+    "https://huggingface.co/camilablank/workspace-lenses/tree/main/qwen3.6-27b/template-lens/passages",
+    "https://huggingface.co/camilablank/workspace-lenses/raw/main/qwen3.6-27b/template-lens/passages/README.md",
+    "https://huggingface.co/camilablank/workspace-lenses/raw/main/qwen3.6-27b/template-lens/template_words.txt",
+    "https://huggingface.co/camilablank/workspace-lenses/raw/main/qwen3.6-27b/template-lens/template_words+phrases_v3.txt",
+    "https://huggingface.co/camilablank/workspace-lenses/raw/main/qwen3.6-27b/template-lens/passages/phrases.json"
+  ],
+  "local_used": [
+    "results/jlens_redteam/grid.json",
+    "results/jlens_redteam/summary.json",
+    "results/jlens_redteam/NOTES.md",
+    "src/jlens_eval.py"
+  ]
+}
